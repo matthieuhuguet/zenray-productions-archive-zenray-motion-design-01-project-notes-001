@@ -1,22 +1,22 @@
 {
  "schemaVersion": 1,
  "projectId": "zenray-motion-design-01",
- "scannedAt": "2026-10-10T21:28:08.286Z",
+ "scannedAt": "2026-10-10T21:46:11.609Z",
  "conversations": [
   {
    "projectId": "zenray-motion-design-01",
-   "lines": 24,
+   "lines": 64,
    "work": 4,
    "prompts": 0,
    "first": "2026-10-10T21:14:11.442Z",
-   "last": "2026-10-10T21:26:37.926Z",
+   "last": "2026-10-10T21:44:05.746Z",
    "strength": "strong",
    "conversationId": "claude:e067e0eb-400b-4769-9366-225560e7a0e4",
    "provider": "claude",
    "sessionId": "e067e0eb-400b-4769-9366-225560e7a0e4",
    "title": "Vidéo motion design OneKey Pro 2",
-   "updatedAt": "2026-10-10T21:26:37.928Z",
-   "bytes": 4636750,
+   "updatedAt": "2026-10-10T21:45:54.296Z",
+   "bytes": 8559131,
    "boundProject": "zenray-motion-design-01"
   }
  ]

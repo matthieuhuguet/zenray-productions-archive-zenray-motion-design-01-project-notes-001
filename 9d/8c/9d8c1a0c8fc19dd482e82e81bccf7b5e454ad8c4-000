@@ -804,3 +804,353 @@
 - Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (10 October 2026, 23:26:22 +0200)
 
 > Le diagnostic confirme que le pipeline fonctionne: FFmpeg 8.1.2, Chrome, Node 26, 18 cœurs. Docker et les modules audio sont absents, mais je n'en ai pas besoin. Je crée maintenant les paramètres de l'ADN (jetons) et le plan des 27 plans et 30 légendes, calés sur les coupes et les temps mesurés de la référence. (10 October 2026, 23:26:22 +0200)
+
+## 10 October 2026, 23:31:21 +0200 : Iteration
+
+<!-- feedback-event:aaae94594314d51e48fa9903fa9d6ace73f85b285c4e7ca56ff71563eb53a5b9 (10 October 2026, 23:31:21 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (10 October 2026, 23:31:21 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (10 October 2026, 23:31:21 +0200)
+
+> Les paramètres sont en place. Je produis maintenant le gabarit de composition, le moteur d'animation qui lit les paramètres, le script de cuisson qui écrit la composition à partir des paramètres, et la chorégraphie des 27 plans, avec des valeurs de temps et de style toutes issues de jetons. (10 October 2026, 23:31:21 +0200)
+
+## 10 October 2026, 23:32:04 +0200 : Iteration
+
+<!-- feedback-event:7c094f7bd2115ea34e368851da9d17c0e96fe2eb812c99115e8fe69d02199ad0 (10 October 2026, 23:32:04 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (10 October 2026, 23:32:04 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (10 October 2026, 23:32:04 +0200)
+
+> Les quatre fichiers de paramètres, de moteur et de cuisson sont écrits. Il manque le gabarit HTML `template/index.html`, qui porte la structure des 27 plans et les repères de cuisson. Je l'écris maintenant, puis je lance la cuisson. (10 October 2026, 23:32:04 +0200)
+
+## 10 October 2026, 23:32:55 +0200 : Iteration
+
+<!-- feedback-event:456f59c686513e81d178d726c40eb6e68770ab9d701a2394a52de3813f5def66 (10 October 2026, 23:32:55 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (10 October 2026, 23:32:55 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (10 October 2026, 23:32:55 +0200)
+
+> La cuisson réussit: 27 plans, 30 légendes, 97 enregistrements de chorégraphie, 93 jetons CSS. Le lint remonte une erreur et 57 avertissements. Les avertissements viennent de la structure: chaque plan et chaque légende sont des éléments temporisés qui contiennent d'autres éléments. Je liste l'erreur exacte avant de décider de la structure. (10 October 2026, 23:32:55 +0200)
+
+## 10 October 2026, 23:33:56 +0200 : Iteration
+
+<!-- feedback-event:0f6171e59f1613c910b5930b876a247805f1684b35f30c9c84d0ae23135d7e35 (10 October 2026, 23:33:56 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (10 October 2026, 23:33:56 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (10 October 2026, 23:33:56 +0200)
+
+> Deux points à corriger. L'erreur vient de l'enregistrement de la timeline, que le lint ne voit pas dans `index.html` parce qu'elle est dans un fichier externe. Les avertissements viennent de la structure, car chaque plan contient ses éléments. HyperFrames recommande des sous-compositions, une par plan, montées par le composant racine. C'est aussi la forme définition et instance du HDA, donc je restructure ainsi. (10 October 2026, 23:33:56 +0200)
+
+## 10 October 2026, 23:34:26 +0200 : Iteration
+
+<!-- feedback-event:f800b79f3c577fd7c2e451535fe146bf958a11e2b21a8528a231f51a774171ab (10 October 2026, 23:34:26 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (10 October 2026, 23:34:26 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (10 October 2026, 23:34:26 +0200)
+
+> Le gabarit doit maintenant rendre chaque légende comme un élément feuille: le `.caption-line` doit annuler l'étirement plein cadre de `.clip`. Je corrige ce point par une substitution vérifiée, puis je recuis et je relance le lint. (10 October 2026, 23:34:26 +0200)
+
+## 10 October 2026, 23:34:38 +0200 : Iteration
+
+<!-- feedback-event:ebf8a63b36eca4b894542c86eabb06f9c014a7af3e0aaedd112140a921ebfcea (10 October 2026, 23:34:38 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (10 October 2026, 23:34:38 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (10 October 2026, 23:34:38 +0200)
+
+> Le lint ne remonte plus que deux familles de constats: les hôtes de sous-compositions doivent porter `data-composition-id`, et les légendes en `nowrap` doivent avoir une largeur maximale. Je corrige les deux dans les sources (cuisson, gabarit, jetons), puis je recuis. (10 October 2026, 23:34:38 +0200)
+
+## 10 October 2026, 23:34:51 +0200 : Iteration
+
+<!-- feedback-event:4be6e88d9b8d0cf45c5d7d02067948c0a0f03a777b46edba7a5186174c6ee72c (10 October 2026, 23:34:51 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (10 October 2026, 23:34:51 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (10 October 2026, 23:34:51 +0200)
+
+> Le lint passe à zéro erreur et zéro avertissement. Les deux notes de modification concernent mes propres changements de cuisson et de jetons, que je garde. Il faut maintenant vérifier le rendu réel, pas seulement la structure. Je regarde les options du rendu et de la vérification d'exécution, puis je lance l'aperçu persistant de HyperFrames. (10 October 2026, 23:34:51 +0200)
+
+## 10 October 2026, 23:34:55 +0200 : Iteration
+
+<!-- feedback-event:f819cd09489ea43e27052ffe00b0919862b48d1177bb03b470e43975faccb8b7 (10 October 2026, 23:34:55 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (10 October 2026, 23:34:55 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (10 October 2026, 23:34:55 +0200)
+
+> La sortie d'aide est trop volumineuse pour être lue en entier. J'en extrais seulement les options utiles. (10 October 2026, 23:34:55 +0200)
+
+## 10 October 2026, 23:34:59 +0200 : Iteration
+
+<!-- feedback-event:1afc0f1ec03c5894b5f7c139dad0b6bffc8faf318054d9c439be48999e2ea2c7 (10 October 2026, 23:34:59 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (10 October 2026, 23:34:59 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (10 October 2026, 23:34:59 +0200)
+
+> Je vérifie maintenant ce que font `--at`, `--snapshots`, `--format` et `--frame-check`, qui permettraient des contrôles ciblés sans rendre les 68 s. (10 October 2026, 23:34:59 +0200)
+
+## 10 October 2026, 23:35:07 +0200 : Iteration
+
+<!-- feedback-event:76616a34cb09047266f213d428e53e6ae91408c18f9a9819acd4c408c022a25f (10 October 2026, 23:35:07 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (10 October 2026, 23:35:07 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (10 October 2026, 23:35:07 +0200)
+
+> L'option `--at` capture des images à des instants précis, sans rendre les 68 s. C'est la boucle de contrôle rapide qu'il me faut. Je fais un premier passage sur 18 instants clés de la référence et je lis les images produites. (10 October 2026, 23:35:07 +0200)
+
+## 10 October 2026, 23:35:12 +0200 : Iteration
+
+<!-- feedback-event:9644102391bba73d992e6dc12382029c02671408255290634e304b2d5e6c855a (10 October 2026, 23:35:12 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (10 October 2026, 23:35:12 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (10 October 2026, 23:35:12 +0200)
+
+> L'option `--at` n'appartient pas à `render`. Je liste les sous-commandes disponibles pour trouver celle qui fait des captures ponctuelles. (10 October 2026, 23:35:12 +0200)
+
+## 10 October 2026, 23:35:17 +0200 : Iteration
+
+<!-- feedback-event:9b2bf990a0edbcfc80d95ee0473962d86c3a3b3739623601ab3a642ed3cfeac6 (10 October 2026, 23:35:17 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (10 October 2026, 23:35:17 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (10 October 2026, 23:35:17 +0200)
+
+> La commande `snapshot` capture des images clés pour la vérification visuelle. Je lis son mode d'emploi et je lance la vérification sur les instants choisis. (10 October 2026, 23:35:17 +0200)
+
+## 10 October 2026, 23:35:24 +0200 : Iteration
+
+<!-- feedback-event:d51cf6e2821c546d804978d7c9f81fc61340b32be30991ac84b6162176a43a32 (10 October 2026, 23:35:24 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (10 October 2026, 23:35:24 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (10 October 2026, 23:35:24 +0200)
+
+> `snapshot` accepte des instants précis et `--against`, qui produit une paire rendu/référence. Je lance un passage sur le milieu des 27 plans. Les images vont dans le scratchpad, car elles reproduisent des images de la référence. (10 October 2026, 23:35:24 +0200)
+
+## 10 October 2026, 23:35:52 +0200 : Iteration
+
+<!-- feedback-event:0b1b2a884a161bf6640bcfdf988d9428c84f7708ed90685b79ffb1db7502f107 (10 October 2026, 23:35:52 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (10 October 2026, 23:35:52 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (10 October 2026, 23:35:52 +0200)
+
+> Les 27 captures et les planches de contact sont produites en 22 s. Je regarde les trois planches pour juger le premier jet dans son ensemble. (10 October 2026, 23:35:52 +0200)
+
+## 10 October 2026, 23:36:26 +0200 : Iteration
+
+<!-- feedback-event:60c02b4de3c468e3bc8f020b99d2ce0c285a14fd40fb285e3ef5c015a42627ac (10 October 2026, 23:36:26 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (10 October 2026, 23:36:26 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (10 October 2026, 23:36:26 +0200)
+
+> Le mécanisme des sous-compositions fonctionne: les plans, les légendes, la planche de référence, le compteur et le logo apparaissent au bon endroit. Mais plusieurs animations restent figées, dont le halo d'ouverture, les pastilles de la planche 50 s, le compteur et le décalage de l'appareil de la planche 41 s. Je n'attribue pas ces défauts au hasard: je lance l'aperçu persistant de HyperFrames et j'inspecte les timelines enregistrées dans la page. (10 October 2026, 23:36:26 +0200)
+
+## 10 October 2026, 23:36:33 +0200 : Iteration
+
+<!-- feedback-event:216bb5d5c95a3d8f437db93fa85025497b1ed24c698701a61fe96452a7c7b2cd (10 October 2026, 23:36:33 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (10 October 2026, 23:36:33 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (10 October 2026, 23:36:33 +0200)
+
+> L'aperçu tourne sur le port 4601. J'ouvre le studio dans le navigateur interne et je lis l'état de la page: timelines enregistrées, iframes et valeurs calculées des éléments de test. (10 October 2026, 23:36:33 +0200)
+
+## 10 October 2026, 23:36:43 +0200 : Iteration
+
+<!-- feedback-event:ee91e8def77355bb3855d9e5ad0b0c0eeb509f652b2ddb628e2c95c882075c44 (10 October 2026, 23:36:43 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (10 October 2026, 23:36:43 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (10 October 2026, 23:36:43 +0200)
+
+> Le studio ne montre pas la composition au niveau supérieur de la page. Je charge directement `index.html` depuis le serveur d'aperçu et je relève le même état. (10 October 2026, 23:36:43 +0200)
+
+## 10 October 2026, 23:36:54 +0200 : Iteration
+
+<!-- feedback-event:2cc34ef2bf5270df7ac8bcfbfc484e4fff8cc76aad40d5d6c52a91247b72ff12 (10 October 2026, 23:36:54 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (10 October 2026, 23:36:54 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (10 October 2026, 23:36:54 +0200)
+
+> Le serveur renvoie le studio pour toute route, donc la composition ne se charge pas à nu. Pour trancher la question du temps local des sous-compositions, je lis le code du moteur installé dans le cache npx au lieu de deviner. (10 October 2026, 23:36:54 +0200)
+
+## 10 October 2026, 23:37:01 +0200 : Iteration
+
+<!-- feedback-event:1c1e952595500fe940f7d548b477d30a1a10523bdb8e79d70c23798dab1995a4 (10 October 2026, 23:37:01 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (10 October 2026, 23:37:01 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (10 October 2026, 23:37:01 +0200)
+
+> Le runtime est dans `hyperframe-runtime.js`. J'y cherche le traitement des sous-compositions: temps local, enregistrement des timelines et script à exécuter. (10 October 2026, 23:37:01 +0200)
+
+## 10 October 2026, 23:37:11 +0200 : Iteration
+
+<!-- feedback-event:2d245e10a4512eb93b1ea9dd319fe2de9106c32a64b7c05f3996d04114981f12 (10 October 2026, 23:37:11 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (10 October 2026, 23:37:11 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (10 October 2026, 23:37:11 +0200)
+
+> Le runtime enregistre les timelines via un proxy sur `window.__timelines`. Le calcul du temps local des sous-compositions se trouve dans les fragments du producteur. J'en extrais le contexte autour des occurrences avec Python, qui évite les limites de `grep` sur les lignes minifiées. (10 October 2026, 23:37:11 +0200)
+
+## 10 October 2026, 23:37:17 +0200 : Iteration
+
+<!-- feedback-event:1d251f8685f7561e0de2be5fed5e010263695da5a50a16acc345517e1af878b0 (10 October 2026, 23:37:17 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (10 October 2026, 23:37:17 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (10 October 2026, 23:37:17 +0200)
+
+> Le moteur traite les enfants des sous-compositions avec un décalage relatif à l'hôte, ce qui correspond à mon hypothèse. Je vérifie maintenant comment il déplace chaque timeline enregistrée (appel de `seek`) pour expliquer les images figées. (10 October 2026, 23:37:17 +0200)
+
+## 10 October 2026, 23:37:22 +0200 : Iteration
+
+<!-- feedback-event:306343c110adeda2f99a20d5b2840c03c063051d23fd42616e78903215a2803b (10 October 2026, 23:37:22 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (10 October 2026, 23:37:22 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (10 October 2026, 23:37:22 +0200)
+
+> Le moteur contrôle la timeline racine et la visibilité des clips par `data-start`. Je lis la fonction qui place chaque timeline à l'instant voulu, car c'est elle qui décide si l'animation locale d'un plan avance. (10 October 2026, 23:37:22 +0200)
+
+## 10 October 2026, 23:37:26 +0200 : Iteration
+
+<!-- feedback-event:2e9408152a2ddf16bd0d27a5bbdaef18a0fded9d791ca60791b0bf254b896c51 (10 October 2026, 23:37:26 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (10 October 2026, 23:37:26 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (10 October 2026, 23:37:26 +0200)
+
+> La fonction `vS` parcourt les timelines non racines et les place. Je lis la suite pour savoir quel temps elle leur transmet. (10 October 2026, 23:37:26 +0200)
+
+## 10 October 2026, 23:37:51 +0200 : Iteration
+
+<!-- feedback-event:5d4d9ba0256c3e77c1776d27c1c953d0693f21e69c986f1badcd1c48a8f9bbf5 (10 October 2026, 23:37:51 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (10 October 2026, 23:37:51 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (10 October 2026, 23:37:51 +0200)
+
+> Le moteur place bien chaque sous-timeline à `temps global − début de l'hôte`, mais les images montrent que cette mise en place ne se comporte pas comme prévu. Je ne vais pas empiler des hypothèses sur un mécanisme que je ne peux pas observer directement. Je reviens à la structure à timeline racine unique, qui a fait ses preuves avec les légendes: tous les plans ont leurs tweens en temps absolu, dans une seule timeline enregistrée. Les avertissements de structure du lint sont alors connus et assumés, documentés dans la skill. (10 October 2026, 23:37:51 +0200)
+
+## 10 October 2026, 23:38:07 +0200 : Iteration
+
+<!-- feedback-event:2edd481effea35e26509342c7a4acced5eb4fa63e056f64c66eca6a8ce109b1a (10 October 2026, 23:38:07 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (10 October 2026, 23:38:07 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (10 October 2026, 23:38:07 +0200)
+
+> La structure plate est revenue. Le lint n'a plus d'erreur, et il reste 26 avertissements de structure, que je documente. Je refais les captures aux mêmes instants pour comparer. (10 October 2026, 23:38:07 +0200)
+
+## 10 October 2026, 23:38:56 +0200 : Iteration
+
+<!-- feedback-event:9147f826633592e9bc350d737ab0bf4743fa83e135fd33327c5f04d657029205 (10 October 2026, 23:38:56 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (10 October 2026, 23:38:56 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (10 October 2026, 23:38:56 +0200)
+
+> La structure plate fonctionne: l'orbe, l'arche, l'appareil, les légendes, les plans de matière, la planche de connexion, la pile de couches et le logo se déroulent au bon moment. Cinq points restent à corriger: la carte est vue de dos sans perspective, l'arc déborde du cadre, le QR se construit trop lentement, le smoke est trop déchiré, et la variante bronze est rognée par le filtre. Je corrige ces cinq points dans les sources, puis je recuis et je reprends les captures. (10 October 2026, 23:38:56 +0200)
+
+## 10 October 2026, 23:39:40 +0200 : Iteration
+
+<!-- feedback-event:a8b1eb3d7eea5202c6b264d09df8f1fe2bc53f448f0d84ee4ea9c21f8286e6d7 (10 October 2026, 23:39:40 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (10 October 2026, 23:39:40 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (10 October 2026, 23:39:40 +0200)
+
+> Le mécanisme de rotation fonctionne, mais trois défauts restent. Le filtre de flou sur la carte aplatit la rotation 3D, ce qui affiche le recto en miroir. La variante bronze hérite de la classe `.bronze` du plan 8 et prend un fond plein cadre. La courbe d'aisance est coupée sous le cadre. J'ajoute aussi un léger flou au smoke pour l'adoucir. Je corrige ces points à la source. (10 October 2026, 23:39:40 +0200)
+
+## 10 October 2026, 23:39:59 +0200 : Iteration
+
+<!-- feedback-event:565e94a3e36c87fd9b83a0ce085ee6c75004d9367f361967b6900cd868d468a6 (10 October 2026, 23:39:59 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (10 October 2026, 23:39:59 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (10 October 2026, 23:39:59 +0200)
+
+> Le lint reste à zéro erreur. Je regarde la planche des six instants corrigés. (10 October 2026, 23:39:59 +0200)
+
+## 10 October 2026, 23:40:15 +0200 : Iteration
+
+<!-- feedback-event:d93dfc9efa3183fb36664ef145f90b6ad2a3185d3a75e7c9dd75b129de6822b4 (10 October 2026, 23:40:15 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (10 October 2026, 23:40:15 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (10 October 2026, 23:40:15 +0200)
+
+> La carte, la courbe et le smoke sont justes. Il reste la variante bronze: la forme `background` écrase `background-clip: text` dans la règle de l'accent, et le fond se peint sur toute la boîte. Je rajoute le découpage après le fond, je vérifie l'instant 61,4 s, puis je lance le rendu complet 60 images par seconde en arrière-plan. (10 October 2026, 23:40:15 +0200)
+
+## 10 October 2026, 23:40:32 +0200 : Iteration
+
+<!-- feedback-event:8da7f4709a0647f6ae0d7b1631b2b797faab379431d7eef978de5a7d5fd380b4 (10 October 2026, 23:40:32 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (10 October 2026, 23:40:32 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (10 October 2026, 23:40:32 +0200)
+
+> Le plan bronze est juste: la typographie Vogun en dégradé, le reflet du sol et le titre. La chaîne complète est prête. Je lance le rendu 60 images par seconde en arrière-plan, avec un journal, car il dure plusieurs minutes. (10 October 2026, 23:40:32 +0200)
+
+## 10 October 2026, 23:40:50 +0200 : Iteration
+
+<!-- feedback-event:99b50418f669dcdcd4a1dbfc58a6fa30dd9cc30ba675eee36133dbe3df9aac71 (10 October 2026, 23:40:50 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (10 October 2026, 23:40:50 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (10 October 2026, 23:40:50 +0200)
+
+> Le rendu tourne en arrière-plan. Pendant ce temps, je consigne l'objectif X de `/dont-stop` dans le feedback canonique, sous forme d'ordre, puis l'état de reprise du chantier. Je vérifie d'abord la syntaxe du journal. (10 October 2026, 23:40:50 +0200)
+
+## 10 October 2026, 23:41:03 +0200 : Order of work
+
+<!-- feedback-event:ffc900dfb501560768e663fa744e7f080b149d8566c850fa00936d95ce373ad4 (10 October 2026, 23:41:03 +0200) -->
+- Project: zenray-motion-design-01; kind: order. (10 October 2026, 23:41:03 +0200)
+
+> Objectif X (/goal et /dont-stop, mots de Matthieu : « identique à la vidéo fournie ») : la vidéo produite reprend le même déroulé que la référence OneKey Pro 2 (68 s, 27 plans, mêmes instants de coupe, légendes à leurs temps mesurés), la même énergie de mouvement et les mêmes couleurs mesurées, avec un contenu adapté à la cible motion design. Aucune image ni musique générée : code et polices seulement. Interprétation retenue : identité de structure et de rythme, pas identité de pixels ni de texte. Contrôle : Scripts/Verify.py contre la référence mesurée, seuils écrits dans le script. (10 October 2026, 23:41:03 +0200)
+
+## 10 October 2026, 23:41:03 +0200 : Log
+
+<!-- feedback-event:24428dc68c0f6438c47f41facf9fc9608f2a3962a8a97eefc6c19798992b1c3c (10 October 2026, 23:41:03 +0200) -->
+- Project: zenray-motion-design-01; kind: log. (10 October 2026, 23:41:03 +0200)
+
+> Décision de structure (10 October 2026, 23:58 CEST) : une seule timeline racine, plans et légendes en temps absolu. Essai de sous-compositions (un fichier par plan, montées par data-composition-src) : la timeline de chaque plan n'a pas été placée au temps local attendu, donc abandonnée. Conséquence : le lint signale nested_structure_needs_subcomposition sur les plans ; c'est un avertissement assumé, documenté dans la skill. (10 October 2026, 23:41:03 +0200)
+
+## 10 October 2026, 23:40:56 +0200 : Iteration
+
+<!-- feedback-event:4ef29fdfa417eaf02c09550b54692bd7de963a4e13b48a5743afa8c82e48dbdd (10 October 2026, 23:40:56 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (10 October 2026, 23:40:56 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (10 October 2026, 23:40:56 +0200)
+
+> Le writer canonique accepte un ordre daté avec un identifiant stable. J'y consigne l'objectif X et les décisions de structure, puis je pose le fichier d'état de reprise dans l'atelier. (10 October 2026, 23:40:56 +0200)
+
+## 10 October 2026, 23:41:35 +0200 : Iteration
+
+<!-- feedback-event:7e486dc490a44f81d2053b21628494b018d8f5ffcd5e92299ca05f7f5955de00 (10 October 2026, 23:41:35 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (10 October 2026, 23:41:35 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (10 October 2026, 23:41:35 +0200)
+
+> Le journal et le feedback sont à jour. Pendant le rendu, j'écris le script de vérification `Scripts/Verify.py`: il mesure la sortie contre la référence (durée, coupes, rythme de mouvement, timing et lisibilité des légendes par OCR, couleurs, taille d'encre) et impose des seuils écrits en tête de fichier. (10 October 2026, 23:41:35 +0200)
+
+## 10 October 2026, 23:41:58 +0200 : Iteration
+
+<!-- feedback-event:459a5bf008b9da7a7e355b5323db4e82f158c7e4a13a47b89a8d453ac4562c69 (10 October 2026, 23:41:58 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (10 October 2026, 23:41:58 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (10 October 2026, 23:41:58 +0200)
+
+> Le rendu est terminé avec le code de sortie 0. Je contrôle le fichier produit (durée, cadence, format), puis je lance la vérification complète contre la référence. (10 October 2026, 23:41:58 +0200)
+
+## 10 October 2026, 23:42:30 +0200 : Iteration
+
+<!-- feedback-event:46d22f7ee64f78e1a34c888070235e4e358f79770bda2ec4ff12bef647be90b0 (10 October 2026, 23:42:30 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (10 October 2026, 23:42:30 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (10 October 2026, 23:42:30 +0200)
+
+> Le rendu est correct: 1920×1080, 60 images par seconde, 4080 images, 68,0 s, 11,4 Mo. La vérification donne quatre contrôles sur cinq acquis: durée, lisibilité des légendes (26 sur 30, timing médian 0,15 s), couleurs (ΔE médian 10,1) et taille d'encre (ratio 0,94). Deux échouent, le mouvement (corrélation 0,38) et les coupes (6 sur 13). Avant de corriger, je regarde où les coupes de référence n'ont pas de contrepartie chez nous, et quels plans bougent moins. (10 October 2026, 23:42:30 +0200)
+
+## 10 October 2026, 23:43:18 +0200 : Iteration
+
+<!-- feedback-event:06e0ada027b6e032810e45e6dd8cdcba2a5f36a902b44a2652efeeeb5a4913cc (10 October 2026, 23:43:18 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (10 October 2026, 23:43:18 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (10 October 2026, 23:43:18 +0200)
+
+> Les deux échecs ont une cause claire. Chaque entrée de plan commence par un fondu depuis le noir, donc la première image du plan ressemble à la fin du précédent et la coupe ne se voit pas. Et la plupart des plans n'ont de mouvement qu'à leur entrée, alors que la référence bouge en continu. Je corrige la règle de coupe (un plan apparaît entier à son début, l'entrée devient un mouvement), j'ajoute un mouvement d'ambiance continu par plan, dont l'amplitude vient d'une table de paramètres, et je réduis le flash plein cadre qui écrasait l'énergie du plan 12. (10 October 2026, 23:43:18 +0200)
+
+## 10 October 2026, 23:44:08 +0200 : Iteration
+
+<!-- feedback-event:7f5a4860acecb283206d5a470222efbd529ba1a543f620b0aa40b6533570d55b (10 October 2026, 23:44:08 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (10 October 2026, 23:44:08 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (10 October 2026, 23:44:08 +0200)
+
+> Le rendu v2 est produit. Je relance la vérification complète sur ce fichier pour comparer avec la v1. (10 October 2026, 23:44:08 +0200)
+
+## 10 October 2026, 23:44:23 +0200 : Iteration
+
+<!-- feedback-event:758da7a3bbfcebd8bf114522874430defa43ce27ab505b8f7ad633c8db25cf95 (10 October 2026, 23:44:23 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (10 October 2026, 23:44:23 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (10 October 2026, 23:44:23 +0200)
+
+> La v2 passe presque tout: corrélation image à image 0,49, coupes 8 sur 13, légendes lisibles, couleurs et encre dans les seuils. Il manque un peu de corrélation de rang par plan (0,46 contre 0,50). Je compare l'énergie plan par plan pour corriger les amplitudes de manière ciblée. (10 October 2026, 23:44:23 +0200)
+
+## 10 October 2026, 23:44:41 +0200 : Iteration
+
+<!-- feedback-event:1ec5566501d29613e1a7c3d37d75f3d2c7ff3b039025c9b24fd421b6cdd49473 (10 October 2026, 23:44:41 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (10 October 2026, 23:44:41 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (10 October 2026, 23:44:41 +0200)
+
+> La corrélation de rang reste à 0,46. Les dérives lentes d'un élément flou produisent très peu de variation d'image, d'où les rapports de 0,03 à 0,2 sur les plans lents. Le plan 12 dépasse la cible d'un facteur trois à cause du flash et des tranches. J'ajuste les amplitudes d'ambiance, je rends l'orbe plus net pour qu'il porte l'énergie, et je réduis le flash et la bande, puis je mesure à nouveau. (10 October 2026, 23:44:41 +0200)
+
+## 10 October 2026, 23:45:47 +0200 : Iteration
+
+<!-- feedback-event:7f7aa979c2bea1aa8586459894fbfb6f1b2f90b08b11bf651ac4a708bd8e9dd8 (10 October 2026, 23:45:47 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (10 October 2026, 23:45:47 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (10 October 2026, 23:45:47 +0200)
+
+> Le script a échoué sur la dernière substitution (le fichier de chorégraphie est indenté sur plusieurs lignes), donc le flash, la bande et les tranches n'ont pas changé. Les réglages qui ont produit le rendu v3 sont cohérents: ils sont dans les sources et dans le rendu. Avec ces réglages, la vérification passe les six contrôles: corrélation image à image 0,50, rang par plan 0,56, 9 coupes sur 13, 25 légendes lisibles sur 30, ΔE médian 10,3, ratio d'encre 0,97. Un contrôle des seuils ne suffit pas à juger le résultat. Je regarde les 27 plans du rendu v3 sur une planche. (10 October 2026, 23:45:47 +0200)
+
+## 10 October 2026, 23:45:54 +0200 : Prompt
+
+<!-- feedback-event:fc01bf2949510c48b1d8acbcac6e78e728d51c9cd493a447966b3b2acfa8b119 (10 October 2026, 23:45:54 +0200) -->
+- Project: zenray-motion-design-01; kind: prompt. (10 October 2026, 23:45:54 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (10 October 2026, 23:45:54 +0200)
+
+> [Image: original 2928x1390, displayed at 2000x949. Multiply coordinates by 1.46 to map to original image.] (10 October 2026, 23:45:54 +0200)
+
+## 10 October 2026, 23:46:22 +0200 : Iteration
+
+<!-- feedback-event:1a96f83e4db9ba2b3f77d5b4ab158eeb3728565f0b8236d5c48a683df27017dd (10 October 2026, 23:46:22 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (10 October 2026, 23:46:22 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (10 October 2026, 23:46:22 +0200)
+
+> Le message ne contient que la note de dimensions de l'image, sans contenu lisible pour moi. Je ne peux donc pas savoir quel point elle désigne. Je le signale dans ma réponse finale et j'avance sur le reste. Sur la planche v3, je vois un plan 22 entièrement orange, trop agressif, à noter. Je lance maintenant la passe de contrôle complète d'HyperFrames (exécution, mise en page, mouvement, contraste). (10 October 2026, 23:46:22 +0200)
