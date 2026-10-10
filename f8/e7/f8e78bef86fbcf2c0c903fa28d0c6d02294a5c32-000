@@ -3,3 +3,16 @@
 - Project ID: zenray-motion-design-01. (10 October 2026)
 - Canonical feedback: /Users/zenray/.claude/Memory1/Projects/zenray-motion-design-01/FEEDBACK.md. (10 October 2026)
 - Append dated decisions and verified knowledge here; retain existing entries. (10 October 2026)
+
+## 10 October 2026 : Connaissance durable du projet zenray-motion-design-01
+
+- Objet : reproduire le déroulé, les coupes et le rythme de la référence OneKey Pro 2 (68,05 s) en motion design HyperFrames, avec un contenu adapté à la cible. Pas d'image ni de musique générées. (10 October 2026)
+- Sortie validée : `renders/zenray-motion-design-01.mp4` (copie de la v3 dans l'atelier), 1920×1080, 60 images/s, H.264, 68,00 s, 11 à 13 Mo, sans audio. (10 October 2026)
+- Vérification v3 : durée réussie ; corrélation image à image 0,502 ; corrélation de rang par plan 0,561 ; 9 coupes franches sur 13 ; 25 légendes lisibles sur 30 ; timing médian 0,10 s ; ΔE médian 10,25 ; rapport d'encre 0,967 ; `OVERALL PASS`. Rapport : `verify/report-v3.json`. (10 October 2026)
+- Storyboard généré : `storyboard/storyboard.html`. Les vignettes de référence restent dans le scratchpad de session, hors atelier et hors mémoire. (10 October 2026)
+- Méthode et pièges : skill `zenray-motion-design` ; indexée dans `zenray-edit`, section Montage / motion design. (10 October 2026)
+- Décision : une timeline racine unique. L'essai de sous-compositions (un fichier par plan) n'a pas donné les temps locaux attendus ; à rouvrir seulement avec un test de rendu avant tout nouveau gabarit. (10 October 2026)
+- Décision : chaque plan apparaît entier à sa coupe ; l'entrée devient un mouvement. Une dérive d'ambiance par plan porte l'énergie, calibrée sur la référence. (10 October 2026)
+- Limites ouvertes : 26 avertissements `nested_structure_needs_subcomposition` assumés ; l'OCR ne lit pas la fumée ; le plan 22 (aplat bronze plein cadre) est jugé trop agressif et reste à adoucir si Matthieu le demande ; storyboard non contrôlé visuellement dans le navigateur (fichier local hors projet). (10 October 2026)
+- Points à décider par Matthieu : licence des polices avant toute diffusion ; publication ou non du rendu ; image jointe au message suivant non lisible à ce stade. (10 October 2026)
+- Reprise : lire `state.json` dans l'atelier, puis `verify/report-v3.json`. Le gabarit est dans `template/`, les paramètres dans `params/`, la cuisson par `node Scripts/Cook.mjs`. (10 October 2026)
