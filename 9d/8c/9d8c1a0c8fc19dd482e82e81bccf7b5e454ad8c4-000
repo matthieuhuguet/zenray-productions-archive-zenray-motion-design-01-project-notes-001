@@ -1561,3 +1561,369 @@
 - Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 00:02:06 +0200)
 
 > Le rendu régénéré passe ses contrôles, mais quatre légendes affichent encore « n.d. ». Avant de corriger, je vérifie que les textes des légendes ne reprennent pas ceux de la référence, puis j'examine d'où vient cette valeur. (11 October 2026, 00:02:06 +0200)
+
+## 11 October 2026, 00:03:14 +0200 : Iteration
+
+<!-- feedback-event:7cb572f4f5d013a9cfa350f4194e5aaa1a078370b74ee804eaa2c78bca4ba937 (11 October 2026, 00:03:14 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (11 October 2026, 00:03:14 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 00:03:14 +0200)
+
+> Les légendes sont en cause, pas seulement les « n.d. ». Elles décrivent Hyperframes lui-même (« Runs in headless Chrome », « Lint it »), ce que vous avez refusé, et neuf fragments de texte se retrouvent dans l'OCR de la référence, dont « No worries », « All new » et « Works with ». Je vérifie avant de réécrire : le rapport de vérification, les commandes de rendu utilisées et l'état du serveur. (11 October 2026, 00:03:14 +0200)
+
+## 11 October 2026, 00:03:35 +0200 : Iteration
+
+<!-- feedback-event:12c030aa05b241d87635fe3b92aef1ed02858245f67752820ef10700ab3ebd97 (11 October 2026, 00:03:35 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (11 October 2026, 00:03:35 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 00:03:35 +0200)
+
+> Le rapport v3 confirme que 25 légendes sur 30 sont lisibles par l'OCR, et les « n.d. » correspondent aux cinq légendes qui ne le sont pas. Je regarde quatre de ces images dans le rendu v3 avant de décider si le défaut vient du texte ou de la mise en scène. (11 October 2026, 00:03:35 +0200)
+
+## 11 October 2026, 00:03:42 +0200 : Iteration
+
+<!-- feedback-event:6e3670aadf24033b35569a6c870d30a79e51854568730bbd262bc0b40b94d5f0 (11 October 2026, 00:03:42 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (11 October 2026, 00:03:42 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 00:03:42 +0200)
+
+> Les images n'ont pas été extraites : zsh ne découpe pas la paire sur l'espace, et `$2` restait vide. Je relance chaque extraction avec ses arguments explicites. (11 October 2026, 00:03:42 +0200)
+
+## 11 October 2026, 00:04:20 +0200 : Iteration
+
+<!-- feedback-event:e15c140583c623b4432cbad5882433a369861789e75769883cc6817ae909cec4 (11 October 2026, 00:04:20 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (11 October 2026, 00:04:20 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 00:04:20 +0200)
+
+> Les deux images montrent que les légendes se lisent bien à l'œil : l'OCR échoue sur le fond chargé, pas le spectateur. Je corrige donc trois choses dans le même passage, sans toucher aux temps ni aux placements : (11 October 2026, 00:04:20 +0200)
+>
+> 1. Remplacer les 30 légendes par un texte original, sans Hyperframes et sans les mots relevés dans la référence. (11 October 2026, 00:04:20 +0200)
+> 2. Ajouter une ombre portée douce, jeton `effects.captionShadow`, pour améliorer la lisibilité sur les fonds clairs. (11 October 2026, 00:04:20 +0200)
+> 3. Recuire, vérifier le gabarit, puis rendre la v4. (11 October 2026, 00:04:20 +0200)
+
+## 11 October 2026, 00:04:27 +0200 : Iteration
+
+<!-- feedback-event:c8ee0ddaa6c5ddcdba10e23eeb3b47e5031e7899d84fe0101c8face8b3ba7101 (11 October 2026, 00:04:27 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (11 October 2026, 00:04:27 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 00:04:27 +0200)
+
+> La recuisson passe avec 0 erreur de lint et les 26 avertissements déjà acceptés. Je lance le rendu v4 avec le navigateur épinglé. (11 October 2026, 00:04:27 +0200)
+
+## 11 October 2026, 00:05:13 +0200 : Iteration
+
+<!-- feedback-event:2c6c14a036ae4171ac5a62626d99e34f5fcfd69c0846a9ddcf958f1692957b60 (11 October 2026, 00:05:13 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (11 October 2026, 00:05:13 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 00:05:13 +0200)
+
+> Le rendu v4 est prêt : 68,000 s, 60 images par seconde, 1920 × 1080, 4080 images. Je lance maintenant la vérification contractuelle sur ce rendu. (11 October 2026, 00:05:13 +0200)
+
+## 11 October 2026, 00:05:45 +0200 : Iteration
+
+<!-- feedback-event:62cbe7ab1d224c6854e3304b575a6a4443c8ce5e10e034203ecaf65305c19d82 (11 October 2026, 00:05:45 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (11 October 2026, 00:05:45 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 00:05:45 +0200)
+
+> Le contrôle global passe (OVERALL PASS), mais les légendes lisibles tombent de 25 à 23 sur 30. Le défaut est clair : les légendes les plus courtes (0,6 à 1,0 s) ont une entrée de 0,7 s et une sortie de 0,3 s, si bien qu'elles ne sont jamais entièrement visibles. Je regarde comment le gabarit calcule ces durées. (11 October 2026, 00:05:45 +0200)
+
+## 11 October 2026, 00:06:02 +0200 : Iteration
+
+<!-- feedback-event:2a925a3bcb488c3b98f2470fe88431e841d82fdb70a006a143c3285aa3d5e42f (11 October 2026, 00:06:02 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (11 October 2026, 00:06:02 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 00:06:02 +0200)
+
+> Le défaut vient de `reveal()` : l'entrée et la sortie gardent leur durée fixe, quelle que soit la fenêtre de la légende. Je la borne à une part de la fenêtre (30 % pour l'entrée, 15 % pour la sortie), ce qui laisse une tenue lisible aux légendes courtes. Je lis aussi comment le constructeur décrit ces durées pour qu'il reste cohérent. (11 October 2026, 00:06:02 +0200)
+
+## 11 October 2026, 00:06:17 +0200 : Iteration
+
+<!-- feedback-event:d02198ef1f33b57f8a3e03ecb0dd64dc4f1188d4211a958f68a680bfa883b3be (11 October 2026, 00:06:17 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (11 October 2026, 00:06:17 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 00:06:17 +0200)
+
+> Le constructeur doit décrire les durées réellement appliquées. Je reporte la même règle dans `reveal_text`, puis je recuis, rends la v5 et relance la vérification, le tout en une seule chaîne qui s'arrête au premier échec. (11 October 2026, 00:06:17 +0200)
+
+## 11 October 2026, 00:07:31 +0200 : Iteration
+
+<!-- feedback-event:7b7f8fc27066922969adf6c23f9f373c19c1808059ba812ae3272a2875202244 (11 October 2026, 00:07:31 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (11 October 2026, 00:07:31 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 00:07:31 +0200)
+
+> La v5 change le résultat marginalement : la légende « One tap » passe de 0 à 0,67, mais « Ready. », « Layers, in place. », « Next step. » et « Your turn. » restent à zéro, alors que je les vois nettement dans les images. Le défaut ne vient donc probablement pas du texte ni du fond, mais de la mesure. Je lis le code de la vérification avant de décider. (11 October 2026, 00:07:31 +0200)
+
+## 11 October 2026, 00:07:37 +0200 : Iteration
+
+<!-- feedback-event:f06ac06af6a021019a9020481583722eba29c25578533aae91a7fb5a0c6aa01c (11 October 2026, 00:07:37 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (11 October 2026, 00:07:37 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 00:07:37 +0200)
+
+> Le calcul de rappel ne regarde que les mots lus par l'OCR dans la fenêtre de la légende. Un rappel de zéro signifie donc que tesseract ne lit rien sur ces images. Je le vérifie directement sur une image du rendu v5, sans rien modifier. (11 October 2026, 00:07:37 +0200)
+
+## 11 October 2026, 00:07:52 +0200 : Iteration
+
+<!-- feedback-event:475c219203faf1e0e2edc466bf0a4a54062df1c09afde4772168204a477eb07b (11 October 2026, 00:07:52 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (11 October 2026, 00:07:52 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 00:07:52 +0200)
+
+> Tesseract ne lit rien d'utile sur ces images, alors que les légendes apparaissent à l'écran. Je regarde directement l'image que lit la vérification à 16,6 s. (11 October 2026, 00:07:52 +0200)
+
+## 11 October 2026, 00:08:02 +0200 : Iteration
+
+<!-- feedback-event:32142bc4ed1afb3daf1edd1a03441ced4a568c3c298baf6c5a5d1c511abdf4ad (11 October 2026, 00:08:02 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (11 October 2026, 00:08:02 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 00:08:02 +0200)
+
+> La légende est parfaitement lisible à l'œil dans cette image, mais tesseract n'en tire rien. Le problème est donc la mesure elle-même : l'OCR échoue sur le dégradé sombre des couches. Avant de l'accepter, je vérifie visuellement les deux autres légendes à zéro, « Next step. » et « Ready. », pour être certain qu'elles apparaissent bien. (11 October 2026, 00:08:02 +0200)
+
+## 11 October 2026, 00:08:23 +0200 : Iteration
+
+<!-- feedback-event:db8616645e5d5520223ce09c9a18ef6c759877078bdbbdc212afdcc3177cebc6 (11 October 2026, 00:08:23 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (11 October 2026, 00:08:23 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 00:08:23 +0200)
+
+> Les deux images confirment que les légendes sont là, en blanc net sur fond sombre (« Next step. ») ou sur les barres colorées (« Ready. »). L'OCR échoue sur ces fonds, pas le spectateur. Je ne vais donc pas retoucher la vidéo pour satisfaire la mesure. Je garde la v5, qui passe le contrôle, et je dis dans le storyboard ce que l'OCR lit et ce qui a été vérifié à l'œil. Avant de l'écrire, je contrôle les trois dernières légendes non lues (C07, C10, C20, C27) sur la v5. (11 October 2026, 00:08:23 +0200)
+
+## 11 October 2026, 00:08:38 +0200 : Iteration
+
+<!-- feedback-event:d0e0a99c719cae3ea20e22d5b131c919fbed86f1b3ac112d675b430cfbdfbef6 (11 October 2026, 00:08:38 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (11 October 2026, 00:08:38 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 00:08:38 +0200)
+
+> Les quatre légendes non lues par l'OCR sont lisibles à l'œil : « One tap. One beat. », « Tap / to unlock. », « Quiet, precise, certain. » et « Your turn. ». Les sept légendes non lues sont donc vérifiées, et je le dirai dans le storyboard. Je prépare maintenant l'étude finale : images moyennes de la v5, libellé honnête à la place de « n.d. », puis reconstruction. (11 October 2026, 00:08:38 +0200)
+
+## 11 October 2026, 00:08:59 +0200 : Iteration
+
+<!-- feedback-event:d738b504afb0c31122b3b19e9877810698374105e48a7ee13f8d67818459b9e7 (11 October 2026, 00:08:59 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (11 October 2026, 00:08:59 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 00:08:59 +0200)
+
+> Le texte explicatif de la table des légendes est à la ligne 493. Je vérifie quelle fonction contient cette table et comment elle reçoit les paramètres, pour que la liste des contrôles visuels vienne d'un fichier de données et ne soit pas écrite en dur. (11 October 2026, 00:08:59 +0200)
+
+## 11 October 2026, 00:09:19 +0200 : Iteration
+
+<!-- feedback-event:cc963f688e788ac20e43da475e385c9b7f5e542b977871b1572c2e97a4ac2285 (11 October 2026, 00:09:19 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (11 October 2026, 00:09:19 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 00:09:19 +0200)
+
+> `build_html` reçoit un contexte. J'y ajoute la liste des contrôles visuels, lue depuis un fichier de données qui n'est valable que pour le rendu concerné, puis je remplace « n.d. » par des libellés explicites et je reconstruis le storyboard v5. (11 October 2026, 00:09:19 +0200)
+
+## 11 October 2026, 00:09:39 +0200 : Iteration
+
+<!-- feedback-event:ec774b1ba4b5cdc340ebd13a346a1e63465c48f2c4912eda17a4bbd7dec56675 (11 October 2026, 00:09:39 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (11 October 2026, 00:09:39 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 00:09:39 +0200)
+
+> Le storyboard v5 est reconstruit : 27 plans, 30 légendes, aucun contrôle en échec, plus aucun « n.d. ». Avant de l'envoyer, je fais un audit mécanique du texte livré : tirets interdits, reliquats anglais, accolades non remplacées, mots de la référence, et chemins vers les vignettes de référence. (11 October 2026, 00:09:39 +0200)
+
+## 11 October 2026, 00:09:52 +0200 : Iteration
+
+<!-- feedback-event:1b45472aac370b661becaf1bc1c85cb35e4576bd35787d2af5a29df8ce5f8113 (11 October 2026, 00:09:52 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (11 October 2026, 00:09:52 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 00:09:52 +0200)
+
+> L'audit donne trois constats à traiter. Les tirets, les accolades, les chemins de vignettes et les images embarquées sont propres. Les termes « power », « back.out » et « expo » sont des identifiants de courbe GSAP, donc acceptables. Mais trois chaînes proches du texte de la référence apparaissent encore dans le storyboard, et j'ai besoin de savoir d'où elles viennent avant de conclure. (11 October 2026, 00:09:52 +0200)
+
+## 11 October 2026, 00:10:11 +0200 : Iteration
+
+<!-- feedback-event:c72d7f0788b2810f0dd5a03df4dfa9bdfdecc9758359e4555e40525e397e4493 (11 October 2026, 00:10:11 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (11 October 2026, 00:10:11 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 00:10:11 +0200)
+
+> Deux notes du fichier `storyboard-notes.json` citent encore les anciennes légendes, dont « No worries » et « Works with git », alors que la vidéo affiche désormais les nouvelles. Je les mets à jour pour qu'elles décrivent exactement les légendes rendues, puis je cherche d'autres reliquats des anciens textes. (11 October 2026, 00:10:11 +0200)
+
+## 11 October 2026, 00:10:43 +0200 : Iteration
+
+<!-- feedback-event:625c7d558a3de1baa94d4a8d985b539f75fab49a65f35212a7d4d148cef3f0a2 (11 October 2026, 00:10:43 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (11 October 2026, 00:10:43 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 00:10:43 +0200)
+
+> Ce passage révèle un problème plus large : les mêmes anciennes légendes sont citées dans d'autres notes, et certains éléments visibles dans la vidéo elle-même viennent aussi de Hyperframes, comme le mot-titre « HTML » et la pastille « LICENSE Apache-2.0 ». Je liste tout le texte visible du gabarit pour traiter l'ensemble d'un coup, plutôt qu'au cas par cas. (11 October 2026, 00:10:43 +0200)
+
+## 11 October 2026, 00:11:05 +0200 : Iteration
+
+<!-- feedback-event:e2ea2c64c4759678f27a507197570fa31ec188a4621d485d5b106307a790d43a (11 October 2026, 00:11:05 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (11 October 2026, 00:11:05 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 00:11:05 +0200)
+
+> Le texte visible contient plusieurs éléments qui décrivent l'outil lui-même : « Lint », « Render », « Export », « Preview », « frames », « PLAIN HTML », « LICENSE Apache-2.0 » et le mot-titre « HTML ». Ils sont tous à remplacer par des libellés neutres, comme le demandait la correction. Je fais ces remplacements dans le gabarit et dans les citations des notes, puis je recuis, je rends la v6 et je revérifie. (11 October 2026, 00:11:05 +0200)
+
+## 11 October 2026, 00:12:12 +0200 : Iteration
+
+<!-- feedback-event:dbde6300a9199cd5177244dea869f728762d168616b1bffdedde22fade3e3b5c (11 October 2026, 00:12:12 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (11 October 2026, 00:12:12 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 00:12:12 +0200)
+
+> La v6 passe la vérification globale. Les mêmes sept légendes restent non lues par l'OCR, comme en v5. Le contrôle visuel doit toutefois porter sur ce rendu-là : je tire les sept images de ces instants dans la v6 et les réunis sur une seule planche. (11 October 2026, 00:12:12 +0200)
+
+## 11 October 2026, 00:12:23 +0200 : Iteration
+
+<!-- feedback-event:819079e50f42a50f309d04cf116711e04e7d53cfd1c139a6bbad51f957e5063f (11 October 2026, 00:12:23 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (11 October 2026, 00:12:23 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 00:12:23 +0200)
+
+> Les sept légendes non lues sont visibles sur la v6, et les libellés neutres (« Status », « Access », « SURE ») sont en place. J'enregistre ces contrôles pour la v6, je régénère les images des plans à partir de cette version, puis je reconstruis le storyboard et je relance l'audit complet du texte. (11 October 2026, 00:12:23 +0200)
+
+## 11 October 2026, 00:12:40 +0200 : Iteration
+
+<!-- feedback-event:ee12a115b0f01e5318ccc026a2b72b52b55030582d390dad6488280bf608107b (11 October 2026, 00:12:40 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (11 October 2026, 00:12:40 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 00:12:40 +0200)
+
+> Il reste une seule occurrence à corriger : la description de la section « Hero » contient encore « HTML », alors que le mot-titre est maintenant « SURE ». Je cherche d'où elle vient, dans le constructeur ou dans les notes. (11 October 2026, 00:12:40 +0200)
+
+## 11 October 2026, 00:12:57 +0200 : Iteration
+
+<!-- feedback-event:886ff8fdaa2b0b3238474ad9cb55c9488cebb53fb9fc83d3b3cb1d7e8078d13f (11 October 2026, 00:12:57 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (11 October 2026, 00:12:57 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 00:12:57 +0200)
+
+> Le storyboard v6 est propre : aucun « HTML », aucun « Hyperframes », et il est reconstruit à partir des images et des mesures de la v6. Je le contrôle ensuite dans le navigateur interne, sur le serveur local déjà lancé, en bureau puis en largeur téléphone, pour vérifier l'absence de défilement horizontal. (11 October 2026, 00:12:57 +0200)
+
+## 11 October 2026, 00:13:12 +0200 : Iteration
+
+<!-- feedback-event:1cf9e772dee30d19a28225c282b5c0e2cf59891fc6698b98102b5fff4d203f40 (11 October 2026, 00:13:12 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (11 October 2026, 00:13:12 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 00:13:12 +0200)
+
+> Le texte se charge correctement : 11 sections, 27 plans, aucune image cassée. En largeur téléphone, en revanche, une table déborde et crée un défilement horizontal de la page (569 px pour 375 px). Je place chaque table dans une boîte à défilement propre, pour que la page ne défile jamais de côté. (11 October 2026, 00:13:12 +0200)
+
+## 11 October 2026, 00:13:32 +0200 : Iteration
+
+<!-- feedback-event:8e3d944265593450b060d0d75332ffa7abaf1ed674cba7a2b1df7696da268c93 (11 October 2026, 00:13:32 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (11 October 2026, 00:13:32 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 00:13:32 +0200)
+
+> La table est maintenant encadrée, mais la page affiche toujours 470 px pour 375 px. Aucun élément hors boîte ne dépasse, donc le débordement vient d'un contenu qui ne passe pas à la ligne, probablement un chemin de fichier. Je le localise avant de corriger. (11 October 2026, 00:13:32 +0200)
+
+## 11 October 2026, 00:13:39 +0200 : Iteration
+
+<!-- feedback-event:073276ce963ca0b6282244a3b048a4d8915a5cbdfac2cd5ca847ad692480e1ae (11 October 2026, 00:13:39 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (11 October 2026, 00:13:39 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 00:13:39 +0200)
+
+> Le débordement vient de la grille à deux colonnes des plans (`grid2`) et des images qui y sont insérées : leur largeur minimale dépasse la colonne sur téléphone. Je regarde les règles CSS concernées dans le constructeur avant de les corriger. (11 October 2026, 00:13:39 +0200)
+
+## 11 October 2026, 00:13:48 +0200 : Iteration
+
+<!-- feedback-event:b9aacd120d9110d4d1637f8e1095c98412e8092694921fc74c00b36b425017a3 (11 October 2026, 00:13:48 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (11 October 2026, 00:13:48 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 00:13:48 +0200)
+
+> Le fautif est la colonne `1fr` de la grille : son minimum dépend du contenu, si bien qu'une table ou un chemin long la fait déborder. Je donne aux colonnes une largeur minimale nulle, je passe en colonne unique sur téléphone et je laisse les longs chemins se couper à la ligne. (11 October 2026, 00:13:48 +0200)
+
+## 11 October 2026, 00:14:10 +0200 : Iteration
+
+<!-- feedback-event:864665d8c871f15335a608dcf73bd8eb61c6edee45fe3ebc02a00a6dc44cd33d (11 October 2026, 00:14:10 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (11 October 2026, 00:14:10 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 00:14:10 +0200)
+
+> Le plan tient désormais en largeur téléphone (375 px pour 375 px) et sur bureau. Le gabarit donne encore 32 px de marge latérale sur téléphone, alors que la règle est 16 px. Je corrige cela, je reconstruis et je refais le contrôle. (11 October 2026, 00:14:10 +0200)
+
+## 11 October 2026, 00:14:36 +0200 : Iteration
+
+<!-- feedback-event:810e7d149f8a066b8009e3c94f1c11da4cc8f359315cdbaee7ffc40de1e9d56a (11 October 2026, 00:14:36 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (11 October 2026, 00:14:36 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 00:14:36 +0200)
+
+> Le storyboard tient maintenant dans la largeur d'un téléphone (375 px pour 375 px, marge de 16 px) et ne contient aucun fichier de référence dans l'atelier. J'arrête le serveur local, je fais de la v6 le candidat final du film et je relève l'interface du journal de progression pour la suite. (11 October 2026, 00:14:36 +0200)
+
+## 11 October 2026, 00:14:45 +0200 : Iteration
+
+<!-- feedback-event:816f57725b27db7c4224fcc3ebfd15ae7168ee7978ca499f263e73838edb2029 (11 October 2026, 00:14:45 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (11 October 2026, 00:14:45 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 00:14:45 +0200)
+
+> Le serveur est arrêté et le candidat final est en place. Les leçons de cette passe (durées de légendes, lecture OCR, textes originaux, tables sur téléphone) doivent aussi entrer dans le skill, sinon la prochaine étude repartira des mêmes défauts. Je regarde d'abord sa structure. (11 October 2026, 00:14:45 +0200)
+
+## 11 October 2026, 00:14:56 +0200 : Iteration
+
+<!-- feedback-event:b774db8063adb3b5904bd732159644d9d92fd64aad1cf05eac65332245ff21cd (11 October 2026, 00:14:56 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (11 October 2026, 00:14:56 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 00:14:56 +0200)
+
+> Le skill a déjà sa structure (scripts, gabarits, exemple de paramètres). Je recopie les fichiers corrigés, j'ajoute une section datée au `SKILL.md` avec ce qui a été appris, puis je synchronise. (11 October 2026, 00:14:56 +0200)
+
+## 11 October 2026, 00:15:11 +0200 : Iteration
+
+<!-- feedback-event:166d3e902aad086ff323b3cfe346215b32a505929afa307fba05572e356245a5 (11 October 2026, 00:15:11 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (11 October 2026, 00:15:11 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 00:15:11 +0200)
+
+> Le skill est à jour et synchronisé. Avant d'écrire dans la mémoire du projet, je relis la fin du `Project1.md` et l'état de reprise pour respecter leur format. (11 October 2026, 00:15:11 +0200)
+
+## 11 October 2026, 00:15:43 +0200 : Log
+
+<!-- feedback-event:d4b0d2c8d551c067c5ed00c1df60f497a176493da9da4e5fdbbf8c9262a618ca (11 October 2026, 00:15:43 +0200) -->
+- Project: zenray-motion-design-01; kind: log. (11 October 2026, 00:15:43 +0200)
+
+> 11 October 2026 : passe de correction. Objectif X retenu pour l'étude : structure et rythme de la référence, contenu original, aucun son, image, texte ni logo de la référence, Verify.py en OVERALL PASS. Légendes et libellés d'outil remplacés (v4, v6). Fenêtres de révélation bornées (v5). Rendu v6 : OVERALL PASS, 23 légendes sur 30 lues par l'OCR, les sept autres relues à l'œil. Storyboard v6 : 27 plans, 30 légendes, contrôles verts. (11 October 2026, 00:15:43 +0200)
+
+## 11 October 2026, 00:15:32 +0200 : Iteration
+
+<!-- feedback-event:0c53ef5ea959867c277c63ff4f5f48c4ae10f9df037e0d2e079142473468c18a (11 October 2026, 00:15:32 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (11 October 2026, 00:15:32 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 00:15:32 +0200)
+
+> Le dossier mémoire demande deux choses : une ligne datée qui corrige la mention de la sortie validée (elle pointe encore vers la v3), et un état de reprise à jour. Je vérifie d'abord qu'aucun aperçu Hyperframes ne tourne encore sur le port 4601, puis j'ajoute les entrées sans réécrire l'historique. (11 October 2026, 00:15:32 +0200)
+
+## 11 October 2026, 00:16:03 +0200 : Iteration
+
+<!-- feedback-event:39227aff9c40b362c7890960cf581993ee9106f1dc23525e13e1b1ce889fc4c3 (11 October 2026, 00:16:03 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (11 October 2026, 00:16:03 +0200)
+- Source: checkpoint:claude:e067e0eb-400b-4769-9366-225560e7a0e4. (11 October 2026, 00:16:03 +0200)
+
+> Passe de correction : légendes originales, libellés neutres, fenêtres de révélation bornées, rendu v6 OVERALL PASS (23 légendes sur 30 lues par l'OCR, les sept autres relues à l'œil), storyboard v6 contrôlé, skill corrigé et synchronisé. Prochain geste : envoyer le storyboard et le film à Matthieu, attendre ses arbitrages. (11 October 2026, 00:16:03 +0200)
+
+## 11 October 2026, 00:15:59 +0200 : Iteration
+
+<!-- feedback-event:37cb89856abca3bb87434a0146e4c35a3f979b8775abdc0ade30e7286f044f15 (11 October 2026, 00:15:59 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (11 October 2026, 00:15:59 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 00:15:59 +0200)
+
+> Les entrées de mémoire sont écrites. Il reste la trace dans le journal de progression, le point de reprise Assets, puis le commit du seul dossier du projet dans la mémoire, sans toucher aux autres fichiers déjà indexés. (11 October 2026, 00:15:59 +0200)
+
+## 11 October 2026, 00:16:18 +0200 : Iteration
+
+<!-- feedback-event:b1cd17706c9321296dc9a5e8cd8a6f5275c1d09029f77136a9d6dd478953ba9b (11 October 2026, 00:16:18 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (11 October 2026, 00:16:18 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 00:16:18 +0200)
+
+> Le commit du dossier mémoire est fait (`a76d60d1a`), et le point de reprise Assets est écrit en local (sauvegarde cloud non confirmée). Je transmets maintenant le storyboard et le film final. (11 October 2026, 00:16:18 +0200)
+
+## 11 October 2026, 00:16:40 +0200 : Iteration
+
+<!-- feedback-event:639e07835f8c006d905c96542a0e4dca580c48ab54ea9dc6432b454f9cff05c9 (11 October 2026, 00:16:40 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (11 October 2026, 00:16:40 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 00:16:40 +0200)
+
+> Le storyboard v6 et le film final sont livrés. Je n'ai pas reproduit les images ni le son de OneKey Pro 2, mais j'ai fait l'étude structurelle que tu voulais, avec un contenu original. (11 October 2026, 00:16:40 +0200)
+>
+> Liens : [storyboard](/Users/zenray/.claude/tmp/tmp-zenray-motion-design-01/storyboard/storyboard.html), [film final](/Users/zenray/.claude/tmp/tmp-zenray-motion-design-01/renders/zenray-motion-design-01.mp4), [rapport de vérification v6](/Users/zenray/.claude/tmp/tmp-zenray-motion-design-01/verify/report-v6.json), [skill](/Users/zenray/.claude/skills/zenray-motion-design/SKILL.md), [mémoire du projet](/Users/zenray/.claude/Memory1/Projects/zenray-motion-design-01/Project1.md). (11 October 2026, 00:16:40 +0200)
+>
+> **Ce que j'ai corrigé dans cette passe** (11 October 2026, 00:16:40 +0200)
+>
+> - **Légendes** : elles décrivaient Hyperframes, et deux fragments du texte de la référence s'y trouvaient. Je les ai remplacées par un texte original sur un appareil fictif. Les libellés d'outil (Lint, Render, Export, HTML, frames, LICENSE) sont devenus neutres. (11 October 2026, 00:16:40 +0200)
+> - **Durée des légendes** : l'entrée et la sortie tiennent maintenant dans la fenêtre de la légende, si bien qu'une légende courte reste lisible. (11 October 2026, 00:16:40 +0200)
+> - **Storyboard** : les « n.d. » sont remplacés par des libellés explicites, les tables défilent dans leur propre boîte et la page tient sur un téléphone avec une marge de 16 px. (11 October 2026, 00:16:40 +0200)
+> - **Lecture OCR** : elle lit 23 légendes sur 30. Les sept autres sont sur fond en dégradé ou en petit titre, et je les ai relues une à une sur le rendu : elles sont lisibles à l'œil. (11 October 2026, 00:16:40 +0200)
+>
+> **Choix que j'ai faits, à corriger si besoin** (11 October 2026, 00:16:40 +0200)
+>
+> - Texte original sur un appareil fictif, pas sur l'outil. (11 October 2026, 00:16:40 +0200)
+> - Ombre portée sur les légendes : elle n'a pas amélioré la lecture OCR, je l'ai gardée pour la lisibilité à l'œil. (11 October 2026, 00:16:40 +0200)
+>
+> **Ce qu'il te reste à décider** (11 October 2026, 00:16:40 +0200)
+>
+> 1. La légende « Quiet, precise, certain. » chevauche le bas de l'appareil : je la déplace ou je la garde ? (11 October 2026, 00:16:40 +0200)
+> 2. Licences des polices (Vogun, InterVariable, AnthropicSerif, AnthropicMono) à vérifier avant toute diffusion. (11 October 2026, 00:16:40 +0200)
+> 3. Publication : rien n'est publié. (11 October 2026, 00:16:40 +0200)
+> 4. L'image jointe à ton message ne m'était pas lisible : renvoie-la, ou décris-la en une phrase. (11 October 2026, 00:16:40 +0200)
+>
+> | Ce que tu voulais | Fait ? | Comment je le sais | (11 October 2026, 00:16:40 +0200)
+> |---|---|---| (11 October 2026, 00:16:40 +0200)
+> | Storyboard impeccable et très détaillé | Oui | 27 plans, 30 légendes, 11 sections, tous les contrôles réussis, aucun tiret long, aucun libellé d'outil, aucun défilement de côté à 375 px (mesuré dans le navigateur interne) | (11 October 2026, 00:16:40 +0200)
+> | Même structure, même rythme, mêmes coupes | En partie | Verify.py en OVERALL PASS : durée 68,00 s, corrélation de mouvement 0,503, 9 coupes franches retrouvées sur 13 | (11 October 2026, 00:16:40 +0200)
+> | Aucun son, image, texte ni logo de la référence | Oui | Légendes originales, aucune phrase de la référence dans le storyboard, aucun son ni image de la référence dans l'atelier | (11 October 2026, 00:16:40 +0200)
+> | Verify.py en OVERALL PASS sur le dernier rendu | Oui (v6) | Rapport de vérification v6, lien ci-dessus | (11 October 2026, 00:16:40 +0200)
+> | Reproduction exacte des images et du son | Refusé | Œuvres et marque protégées | (11 October 2026, 00:16:40 +0200)
+> | Cron de 15 secondes | Impossible | Le minimum est de 60 secondes ; les itérations se sont faites dans la session | (11 October 2026, 00:16:40 +0200)
+> | Voir l'image jointe au premier message | Non | Illisible pour moi, à renvoyer | (11 October 2026, 00:16:40 +0200)
+>
+> Le point de reprise Assets est écrit en local, la sauvegarde cloud reste à confirmer. Le commit mémoire est `a76d60d1a`. (11 October 2026, 00:16:40 +0200)
+>
+> Ta demande en plus court, dans le périmètre accepté : « Étude de OneKey Pro 2, même structure et même rythme, contenu original, vérifiée. » Deux termes : une *légende* est un texte affiché à l'écran, et l'*OCR* est la lecture automatique du texte dans une image. (11 October 2026, 00:16:40 +0200)
