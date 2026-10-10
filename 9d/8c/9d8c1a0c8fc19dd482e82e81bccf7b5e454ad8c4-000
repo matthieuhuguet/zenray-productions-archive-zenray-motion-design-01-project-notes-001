@@ -1957,3 +1957,168 @@
 > | Film final | Oui, sans son | Rapport de vérification v6 en OVERALL PASS | (11 October 2026, 00:37:33 +0200)
 >
 > Laquelle des trois ? Si c'est la 1, envoie-moi le fichier et dis-moi quels droits tu as dessus. (11 October 2026, 00:37:33 +0200)
+
+## 11 October 2026, 00:48:28 +0200 : Prompt
+
+<!-- feedback-event:c9a3fbe3fdf241fc93e41d5d53ec4f32775a6deef5f3d277683c8c36d42619ba (11 October 2026, 00:48:28 +0200) -->
+- Project: zenray-motion-design-01; kind: prompt. (11 October 2026, 00:48:28 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 00:48:28 +0200)
+
+> mais je voulais le son justement ... (11 October 2026, 00:48:28 +0200)
+
+## 11 October 2026, 00:49:23 +0200 : Iteration
+
+<!-- feedback-event:630e16b8b96d61129f5449ce8215e9d512884bf7d2509c534f2ea14ed6afd0ed (11 October 2026, 00:49:23 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (11 October 2026, 00:49:23 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 00:49:23 +0200)
+
+> Je comprends que le son te tient à cœur. La bande musicale de la vidéo OneKey reste hors de ma portée, même découpée ou réaccordée. Je peux en revanche faire une couche sonore originale, faite en code, calée sur les 27 coupes et les légendes, et la vérifier. Je commence par relever les temps de coupe et leur type. (11 October 2026, 00:49:23 +0200)
+
+## 11 October 2026, 00:50:52 +0200 : Iteration
+
+<!-- feedback-event:18c7ededb22c31a30ab0bf094afd2d995ac20908bbf302f468a662d5d78c6b5d (11 October 2026, 00:50:52 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (11 October 2026, 00:50:52 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 00:50:52 +0200)
+
+> Le classement des coupes vient du storyboard : 12 coupes franches, 14 douces, et le départ de la vidéo sans son. Je rédige les paramètres sonores et deux scripts : un qui fabrique la couche sonore en code, un qui la vérifie sur le fichier final, avec un témoin décalé pour contrôler que le vérificateur sait échouer. (11 October 2026, 00:50:52 +0200)
+
+## 11 October 2026, 00:51:10 +0200 : Iteration
+
+<!-- feedback-event:8bfe399e17dad16feac6a3c52b7b5ebae9c8c9ab68ec8457da3493c13a64d2af (11 October 2026, 00:51:10 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (11 October 2026, 00:51:10 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 00:51:10 +0200)
+
+> Les trois fichiers sont en place. Je fabrique la couche sonore, je la fixe sur l'image sans toucher à la vidéo (copie du flux vidéo), puis je lance la vérification et le témoin décalé de 100 ms, qui doit échouer. (11 October 2026, 00:51:10 +0200)
+
+## 11 October 2026, 00:51:58 +0200 : Iteration
+
+<!-- feedback-event:227c26102a4d5859d1ed3a1949fd9fbeb9dac6a60ee6cc12531fcd050a709d70 (11 October 2026, 00:51:58 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (11 October 2026, 00:51:58 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 00:51:58 +0200)
+
+> Le film final passe presque tout : son AAC, stéréo 48 kHz, 53 événements sur 53 audibles, image strictement identique à la v6. Le témoin décalé de 100 ms échoue bien, donc le vérificateur sait échouer. Un point reste à expliquer : un écart maximal de 50 ms sur les débuts de sons. Je cherche quel événement en est responsable avant de conclure quoi que ce soit. (11 October 2026, 00:51:58 +0200)
+
+## 11 October 2026, 00:52:28 +0200 : Iteration
+
+<!-- feedback-event:3c63ab325328e15af8d08b2504aae36fbdedd6c4e41af1f11e412a1550f5f7ff (11 October 2026, 00:52:28 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (11 October 2026, 00:52:28 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 00:52:28 +0200)
+
+> Les 6 écarts de -50 ms ont la même cause : chaque fois, un autre son commence à moins de 0,12 s du son mesuré (une queue de « whoosh » ou un clic de légende). Le détecteur retient alors l'énergie déjà présente et non le départ du son. Le fond de la mesure est juste : l'écart médian est de 0 ms, le maximum de +8 ms. Je corrige la mesure pour comparer chaque départ au niveau juste avant, puis je relance la vérification et le témoin de 100 ms. (11 October 2026, 00:52:28 +0200)
+
+## 11 October 2026, 00:53:12 +0200 : Iteration
+
+<!-- feedback-event:e1aea68ec5a73489d40e52dd3b9c7e4e6d90016074d107134cae6319bdeded6d (11 October 2026, 00:53:12 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (11 October 2026, 00:53:12 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 00:53:12 +0200)
+
+> Le film final passe maintenant tous les contrôles : écarts de début entre 0 et 8 ms, image strictement identique. Le témoin de 100 ms échoue toujours, avec 106 ms d'écart. Je confirme son code de sortie, je mesure le niveau sonore pour le rapport et je repère dans le storyboard les phrases qui parlent encore d'un film muet. (11 October 2026, 00:53:12 +0200)
+
+## 11 October 2026, 00:53:38 +0200 : Iteration
+
+<!-- feedback-event:5d1f25eb80fc097fe263f2bf270039edcd4e4777998326e0ae49720fa320a203 (11 October 2026, 00:53:38 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (11 October 2026, 00:53:38 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 00:53:38 +0200)
+
+> Le témoin échoue bien (code de sortie 1), et le niveau intégré du film est de -21,7 LUFS, pour une crête à 0,767 du plein niveau. Dans le storyboard, trois passages décrivent encore un film sans son. Le rapport sonore doit aussi exposer des valeurs numériques, pour que le constructeur les formate en français sans relire des chaînes. Je relis le vérificateur avant de le modifier. (11 October 2026, 00:53:38 +0200)
+
+## 11 October 2026, 00:53:57 +0200 : Iteration
+
+<!-- feedback-event:e812d0af7ab77395227f58a3376a0af3faf1dfe42b0fc21c93445cd12c2040c6 (11 October 2026, 00:53:57 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (11 October 2026, 00:53:57 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 00:53:57 +0200)
+
+> Je modifie le bloc de rapport pour y écrire des valeurs numériques (durée, crête, écart maximal, nombre d'événements), que le constructeur pourra formater en français. (11 October 2026, 00:53:57 +0200)
+
+## 11 October 2026, 00:54:13 +0200 : Iteration
+
+<!-- feedback-event:f4b488584f2a87be12aa5f8e28ca18d299e5acc2d8b459210e06a44be7502983 (11 October 2026, 00:54:13 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (11 October 2026, 00:54:13 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 00:54:13 +0200)
+
+> Le rapport contient maintenant les valeurs numériques. Je relance la vérification du film final, qui écrit le rapport dans l'atelier, puis j'adapte le constructeur pour qu'il affiche la couche sonore et ses contrôles, et je reconstruis le storyboard. (11 October 2026, 00:54:13 +0200)
+
+## 11 October 2026, 00:55:04 +0200 : Iteration
+
+<!-- feedback-event:74f65350f1609612a148a5ea13bac14d30373b7dbc1c6f7c09e226518dd22f39 (11 October 2026, 00:55:04 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (11 October 2026, 00:55:04 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 00:55:04 +0200)
+
+> Le storyboard reflète maintenant la couche sonore : chaque plan porte son « Son du film », et six contrôles sonores apparaissent dans la vérification (53 événements sur 53 audibles, écart maximal de 8 ms, image identique). Je peaufine deux libellés (format en majuscules, « un clic par instant d'apparition »), je reconstruis, et je fais du film avec son le candidat final. (11 October 2026, 00:55:04 +0200)
+
+## 11 October 2026, 00:55:18 +0200 : Iteration
+
+<!-- feedback-event:bfa3f0d13729cc4fd640205e7a1fc47df47399af14cb39322fce4318847122c8 (11 October 2026, 00:55:18 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (11 October 2026, 00:55:18 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 00:55:18 +0200)
+
+> Le séparateur des milliers a aussi remplacé la virgule de « AAC, 2 voies ». Je corrige ce seul champ, je reconstruis, puis je mets à jour le skill avec les scripts sonores et la leçon sur la mesure des débuts. (11 October 2026, 00:55:18 +0200)
+
+## 11 October 2026, 00:55:49 +0200 : Standing rule
+
+<!-- feedback-event:0be7a9d5880cbbda789643700b69a06da9a2c862ed9356f51c07d2ed05fc13c8 (11 October 2026, 00:55:49 +0200) -->
+- Project: zenray-motion-design-01; kind: rule. (11 October 2026, 00:55:49 +0200)
+
+> 11 October 2026 : son. Matthieu veut le son. La bande musicale de la référence n'est pas reprise (œuvre protégée). Livraison : couche sonore faite en code, sans musique ni son de la référence, calée sur les coupes et les légendes, vérifiée. Une piste fournie par Matthieu, dont il a les droits, se cale sur les mêmes coupes. (11 October 2026, 00:55:49 +0200)
+
+## 11 October 2026, 00:55:42 +0200 : Iteration
+
+<!-- feedback-event:67f91336d5ab80c8e8bf3def701ccb162b5e3a3d52fcce606c35bd449fec872f (11 October 2026, 00:55:42 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (11 October 2026, 00:55:42 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 00:55:42 +0200)
+
+> Le skill est à jour et synchronisé, et le champ de format affiche « AAC, 2 voies, 48 000 Hz ». Je consigne la décision et les mesures dans la mémoire du projet, avec la correction de la ligne qui désignait le candidat final comme muet. (11 October 2026, 00:55:42 +0200)
+
+## 11 October 2026, 00:55:56 +0200 : Iteration
+
+<!-- feedback-event:0a82020b0ddfdc7adfdaee25b1cca7d0c6d654cc4b61b74f4202c71c8292d579 (11 October 2026, 00:55:56 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (11 October 2026, 00:55:56 +0200)
+- Source: checkpoint:claude:e067e0eb-400b-4769-9366-225560e7a0e4. (11 October 2026, 00:55:56 +0200)
+
+> Son : couche sonore faite en code (coups sur coupes franches, souffles sur coupes douces, clics sur légendes), sans musique ni son de la référence ; piste AAC ajoutée au film sans réencodage de l'image ; VerifySound OVERALL PASS (53 événements audibles, écart maximal 8,0 ms, image identique). Prochain geste : Matthieu tranche entre garder cette couche et fournir une piste dont il a les droits. (11 October 2026, 00:55:56 +0200)
+
+## 11 October 2026, 00:55:51 +0200 : Iteration
+
+<!-- feedback-event:3ab3489ac8fa1031c58979e51d8e4dce07f904d2ab4e67b469943ede3a14c965 (11 October 2026, 00:55:51 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (11 October 2026, 00:55:51 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 00:55:51 +0200)
+
+> Les notes sont à jour. Je termine par le point de reprise Assets, le commit du seul dossier du projet, et un contrôle final du storyboard : tirets, accolades, et absence des formulations muettes. (11 October 2026, 00:55:51 +0200)
+
+## 11 October 2026, 00:56:01 +0200 : Iteration
+
+<!-- feedback-event:22cde7fad98eb12b9b27fba6ead085a5de7ef59801658929bddb7b9ee5811538 (11 October 2026, 00:56:01 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (11 October 2026, 00:56:01 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 00:56:01 +0200)
+
+> Le commit est fait (`7364079e5`), le point de reprise Assets est écrit en local, et le storyboard ne contient plus de formulation muette : l'unique occurrence restante désigne la v6 comme référence de comparaison. J'envoie le film avec son et le storyboard mis à jour. (11 October 2026, 00:56:01 +0200)
+
+## 11 October 2026, 00:56:12 +0200 : Iteration
+
+<!-- feedback-event:c45e599c0f454aef7bccc9d9e320405d1bfa73a5ddab6344d2fc4524f00a0b19 (11 October 2026, 00:56:12 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (11 October 2026, 00:56:12 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 00:56:12 +0200)
+
+> Je comprends que le son compte pour toi. La bande musicale de OneKey ne sera pas reprise, ni telle quelle ni imitée : c'est une œuvre protégée. Le film a en revanche maintenant un son, fait en code, sans musique et sans rien de la référence : (11 October 2026, 00:56:12 +0200)
+>
+> - un coup grave sur les 12 coupes franches ; (11 October 2026, 00:56:12 +0200)
+> - un souffle sur les 14 coupes douces ; (11 October 2026, 00:56:12 +0200)
+> - un clic sur les 27 instants d'apparition des légendes. (11 October 2026, 00:56:12 +0200)
+>
+> Liens : [film avec son](/Users/zenray/.claude/tmp/tmp-zenray-motion-design-01/renders/zenray-motion-design-01.mp4) et [storyboard mis à jour](/Users/zenray/.claude/tmp/tmp-zenray-motion-design-01/storyboard/storyboard.html). (11 October 2026, 00:56:12 +0200)
+>
+> Les 53 sons sont tous audibles, l'écart maximal avec les images est de 8 ms (une image vaut 16,7 ms), l'image est identique à la version muette, et le niveau est de -21,7 LUFS. Un témoin volontairement décalé de 100 ms échoue bien à la vérification. (11 October 2026, 00:56:12 +0200)
+>
+> Ce qu'il te reste à décider : (11 October 2026, 00:56:12 +0200)
+>
+> 1. Garder ces effets, ou m'envoyer une piste dont tu as les droits : je la cale sur les mêmes coupes. (11 October 2026, 00:56:12 +0200)
+> 2. Les effets faits en code ne sont pas de la musique, mais ta consigne de la phase 1 interdisait « la génération d'asset pour la musique ou image ». Dis-moi si tu veux les retirer ; la version muette reste disponible. (11 October 2026, 00:56:12 +0200)
+>
+> Restent ouverts : la légende C20 chevauche le bas de l'appareil, les licences des polices, la publication, et l'image de ton premier message, que je n'ai jamais pu lire. (11 October 2026, 00:56:12 +0200)
+>
+> | Ce que tu voulais | Fait ? | Comment je le sais | (11 October 2026, 00:56:12 +0200)
+> |---|---|---| (11 October 2026, 00:56:12 +0200)
+> | Le son de la référence | Non | C'est une bande musicale protégée | (11 October 2026, 00:56:12 +0200)
+> | Un son calé sur les coupes | Oui | 53 sons audibles, écart maximal de 8 ms | (11 October 2026, 00:56:12 +0200)
+> | Image inchangée | Oui | Empreinte identique à la version muette | (11 October 2026, 00:56:12 +0200)
+> | Une musique | Pas sans ta piste | Il me faut un fichier dont tu as les droits | (11 October 2026, 00:56:12 +0200)
