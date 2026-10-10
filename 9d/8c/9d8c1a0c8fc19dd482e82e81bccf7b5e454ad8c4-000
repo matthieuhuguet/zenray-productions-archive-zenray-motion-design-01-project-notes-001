@@ -1927,3 +1927,33 @@
 > Le point de reprise Assets est écrit en local, la sauvegarde cloud reste à confirmer. Le commit mémoire est `a76d60d1a`. (11 October 2026, 00:16:40 +0200)
 >
 > Ta demande en plus court, dans le périmètre accepté : « Étude de OneKey Pro 2, même structure et même rythme, contenu original, vérifiée. » Deux termes : une *légende* est un texte affiché à l'écran, et l'*OCR* est la lecture automatique du texte dans une image. (11 October 2026, 00:16:40 +0200)
+
+## 11 October 2026, 00:36:42 +0200 : Prompt
+
+<!-- feedback-event:5b7a375b836229cc29231c24cc45a583915537bdf7131a307be827427ed5cc05 (11 October 2026, 00:36:42 +0200) -->
+- Project: zenray-motion-design-01; kind: prompt. (11 October 2026, 00:36:42 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 00:36:42 +0200)
+
+> justement en fait je voulais le son surtout ... continue (11 October 2026, 00:36:42 +0200)
+
+## 11 October 2026, 00:37:33 +0200 : Iteration
+
+<!-- feedback-event:9e8529fa3aa7be50f4c5cc3c5717931b1fbce44bfdfde3f26c08f247c346b1c4 (11 October 2026, 00:37:33 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (11 October 2026, 00:37:33 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 00:37:33 +0200)
+
+> Le son de la vidéo OneKey, je ne le reprendrai pas : c'est une bande musicale protégée. Ça vaut même si le fichier est déjà sur ta machine, puisque je l'ai téléchargé seulement pour l'analyse, et je ne le réutilise sous aucune forme. Je peux le supprimer si tu veux. (11 October 2026, 00:37:33 +0200)
+>
+> Ce qui reste faisable : (11 October 2026, 00:37:33 +0200)
+>
+> 1. **Ta piste** : une musique que tu possèdes ou qui est sous licence (achetée, ou libre avec sa licence). Je la mesure, je cale les coupes sur ses temps forts, je la mixe au film et je vérifie le décalage sur le rendu. Le storyboard donne déjà les 27 temps de coupe. (11 October 2026, 00:37:33 +0200)
+> 2. **Un son original fait en code** : impacts, balayages et clics calés sur les coupes et les légendes. Ni musique générée, ni son de la référence. Ta consigne de la phase 1 disait « pas de génération d'asset pour la musique ou image », donc j'ai besoin de ton accord avant. (11 October 2026, 00:37:33 +0200)
+> 3. **Muet pour l'instant** : le film reste tel quel, et le storyboard garde son repère sonore pour plus tard. (11 October 2026, 00:37:33 +0200)
+>
+> | Ce que tu voulais | Fait ? | Comment je le sais | (11 October 2026, 00:37:33 +0200)
+> |---|---|---| (11 October 2026, 00:37:33 +0200)
+> | Le son de la référence | Non, refusé | Bande musicale protégée | (11 October 2026, 00:37:33 +0200)
+> | Un son calé sur les coupes | Pas encore | En attente de ton choix | (11 October 2026, 00:37:33 +0200)
+> | Film final | Oui, sans son | Rapport de vérification v6 en OVERALL PASS | (11 October 2026, 00:37:33 +0200)
+>
+> Laquelle des trois ? Si c'est la 1, envoie-moi le fichier et dis-moi quels droits tu as dessus. (11 October 2026, 00:37:33 +0200)
