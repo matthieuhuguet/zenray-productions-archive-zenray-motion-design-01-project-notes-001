@@ -1,0 +1,6 @@
+# zenray-motion-design-01 : rules, append only (12 October 2026)
+
+Standing rules of this project, one line each, loaded automatically at session start. Full history and context: FEEDBACK.md in this folder. A rule that changes gets a new line citing the old one. (12 October 2026)
+
+- 11 October 2026 : son. Matthieu veut le son. La bande musicale de la référence n'est pas reprise (œuvre protégée). Livraison : couche sonore faite en code, sans musique ni son de la référence, calée sur les coupes et les légendes, vérifiée. Une piste fournie par Matthieu, dont il a les droits, se cale sur les mêmes coupes. (11 October 2026) <!-- rule:235e645d5f71 -->
+- 11 October 2026 : génération d'assets uniquement après la validation de Matthieu ; les prompts décrivent l'appareil original de la fiche A00, jamais le produit, la marque ou le texte de la référence. (11 October 2026) <!-- rule:7440f1277adc -->
