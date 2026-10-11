@@ -2122,3 +2122,57 @@
 > | Un son calé sur les coupes | Oui | 53 sons audibles, écart maximal de 8 ms | (11 October 2026, 00:56:12 +0200)
 > | Image inchangée | Oui | Empreinte identique à la version muette | (11 October 2026, 00:56:12 +0200)
 > | Une musique | Pas sans ta piste | Il me faut un fichier dont tu as les droits | (11 October 2026, 00:56:12 +0200)
+
+## 11 October 2026, 16:20:56 +0200 : Prompt
+
+<!-- feedback-event:e323d88c4ce12e883e11f9e5e0af5c392ec39fe0535a0fbb3908024410793191 (11 October 2026, 16:20:56 +0200) -->
+- Project: zenray-motion-design-01; kind: prompt. (11 October 2026, 16:20:56 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 16:20:56 +0200)
+
+> <local-command-caveat>The command below was run directly in Claude Code, not sent to you as a request, and its output goes straight to the user. It's recorded here as context for later messages.</local-command-caveat> (11 October 2026, 16:20:56 +0200)
+
+## 11 October 2026, 16:20:56 +0200 : Prompt
+
+<!-- feedback-event:db553cc61d8902ab60fdaf71b458043480156dfb1b4b03285e6a1edf8af1fb4d (11 October 2026, 16:20:56 +0200) -->
+- Project: zenray-motion-design-01; kind: prompt. (11 October 2026, 16:20:56 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 16:20:56 +0200)
+
+> <command-name>/model</command-name> (11 October 2026, 16:20:56 +0200)
+>             <command-message>model</command-message> (11 October 2026, 16:20:56 +0200)
+>             <command-args>claude-opus-5-5</command-args> (11 October 2026, 16:20:56 +0200)
+
+## 11 October 2026, 16:20:56 +0200 : Prompt
+
+<!-- feedback-event:c6ab63634c205b2cec5c4bc484c448e93bc5ae6cad7482b252c847b83913e2b2 (11 October 2026, 16:20:56 +0200) -->
+- Project: zenray-motion-design-01; kind: prompt. (11 October 2026, 16:20:56 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 16:20:56 +0200)
+
+> <local-command-stdout>Set model to `claude-opus-5-5`</local-command-stdout> (11 October 2026, 16:20:56 +0200)
+
+## 11 October 2026, 16:27:09 +0200 : Prompt
+
+<!-- feedback-event:2fead68fd32dc11572c67f6818107726c38ff6eaf811adaee528cf8fd5d0df41 (11 October 2026, 16:27:09 +0200) -->
+- Project: zenray-motion-design-01; kind: prompt. (11 October 2026, 16:27:09 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 16:27:09 +0200)
+
+> <pasted_content id="2426"> (11 October 2026, 16:27:09 +0200)
+> Maintenant, tu vas recommencer tout le montage en réessayant de vraiment coller à la réf. En fait, tu vas reproduire la vidéo que je te donne. Mais en fait, le problème, c'est que j'ai l'impression que tu arrives pas à reproduire le flow avec un vrai motion design. Est-ce que tu peux essayer de recommencer en traitant chaque animation En fait, ce qu'il faut, c'est que tu fasses, de manière très simple, je te donne une vidéo, tu fais un storyboard sheet de tout ce qui se passe dans la vidéo, de qui tu vois à chaque frame et qu'est-ce que chaque scène illustre. Ensuite, comment les animations de motion design sont faites et essayer de les reproduire. Ensuite, voir s'il y a une intégration 3D ou des assets qui sont nécessaires pour la vidéo. Et donc, par exemple, s'il y a besoin d'assets dans la vidéo prototype ou démo, tu illustres directement dans le montage, dans le montage de la vidéo actuelle via Hyperframes, le nom de l'asset à mettre. Et tu fais ça avec tous les éléments déclinatifs de la vidéo. C'est-à-dire, en fait, la V1 et la méthodologie qu'on va essayer de créer, c'est une vidéo d'assets qui répond elle-même aux besoins qu'on essaie de répondre. Et tout ça pour illustrer des talents de motion design. Pas forcément illustrer des talents de motion design, mais que toute la vidéo soit faite comme si elle avait coûté minimum 5000 € et qu'elle avait été produite en 30 jours par une équipe de 30 personnes motion designers. Mais en vrai, ça, ça veut pas dire grand-chose. Ce que je veux surtout, c'est que la vidéo soit montée par rapport aux assets dont elle a besoin. Et comme ça, ensuite, je te fournis les assets et où tu me donnes un prompt descriptif à chaque itération pour créer les assets. Mais certains assets de motion design, comme le titre et cetera, peuvent directement à partir du storyboard être créés par toi. Et donc, dans cette passe d'itération, j'aimerais que tu le fasses. (11 October 2026, 16:27:09 +0200)
+> </pasted_content id="2426"> (11 October 2026, 16:27:09 +0200)
+>
+> vidéo à reproduire. (11 October 2026, 16:27:09 +0200)
+>
+> Il faut aussi que tu détermines tous les assets dont tu as besoin, c'est-à-dire les fontes, les images, les sons, les musiques. Tout ça, tu dois être capable d'identifier ce que c'est dans la vidéo de référence. La vidéo de référence, en général, soit tu peux la télécharger, soit tu peux la visionner sur le web, soit tu peux capturer le son. Enfin, tu as plein de méthodes de vérifier que ça fonctionnera. (11 October 2026, 16:27:09 +0200)
+>
+> vidéo à reproduire https://whatships.com/videos/onekey-pro-2/ (11 October 2026, 16:27:09 +0200)
+>
+> Les assets ne sont pas forcément à produire, mais ils sont à déterminer dans le montage même de la vidéo. En revanche, tous les assets que tu peux déjà créer de toi-même sans passer par une sans passer par de l'IA gen, tu me le fais. Et juste avant, je vais te donner l'accès à mon Google Flow et comme ça tu as quand même accès à une API qui te permet de générer des trucs. Dis-moi de quoi tu as besoin pour être connecté à mon Google flow qui peut générer des assets Et le truc, c'est que tu dois prompter directement depuis mon Google Flow, depuis une API ou depuis un connecteur pour générer les assets dont tu as besoin. Si le montage est fait par ça posera pas de problème de droit d'auteur.Si les assets sont changés. (11 October 2026, 16:27:09 +0200)
+>
+> uniquement après ma validation  (11 October 2026, 16:27:09 +0200)
+>
+> <pasted_content id="2426"> (11 October 2026, 16:27:09 +0200)
+> le skill et la méthode sont à indexer dans  (11 October 2026, 16:27:09 +0200)
+>
+> /zenray-edit (11 October 2026, 16:27:09 +0200)
+> </pasted_content id="2426"> (11 October 2026, 16:27:09 +0200)
+>
+>  go (11 October 2026, 16:27:09 +0200)

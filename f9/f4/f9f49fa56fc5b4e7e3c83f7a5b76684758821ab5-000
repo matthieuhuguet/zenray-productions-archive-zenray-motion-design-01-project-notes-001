@@ -1,7 +1,7 @@
 {
  "schemaVersion": 1,
  "projectId": "zenray-motion-design-01",
- "scannedAt": "2026-10-10T22:56:30.865Z",
+ "scannedAt": "2026-10-11T14:21:34.318Z",
  "conversations": [
   {
    "projectId": "zenray-motion-design-01",
@@ -15,8 +15,8 @@
    "provider": "claude",
    "sessionId": "e067e0eb-400b-4769-9366-225560e7a0e4",
    "title": "Vidéo motion design OneKey Pro 2",
-   "updatedAt": "2026-10-10T22:56:15.940Z",
-   "bytes": 20930,
+   "updatedAt": "2026-10-11T14:20:56.902Z",
+   "bytes": 20966,
    "boundProject": "zenray-motion-design-01"
   }
  ]
