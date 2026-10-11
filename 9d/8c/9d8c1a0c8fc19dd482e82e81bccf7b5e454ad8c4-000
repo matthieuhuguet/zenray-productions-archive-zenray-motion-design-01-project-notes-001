@@ -2176,3 +2176,146 @@
 > </pasted_content id="2426"> (11 October 2026, 16:27:09 +0200)
 >
 >  go (11 October 2026, 16:27:09 +0200)
+
+## 11 October 2026, 16:30:19 +0200 : Iteration
+
+<!-- feedback-event:4be2427f3f23362f2422263801cc956419c0555eb278d5f3621e8fd913e06a2a (11 October 2026, 16:30:19 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (11 October 2026, 16:30:19 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 16:30:19 +0200)
+
+> Je commence par charger la méthode du skill de motion design, puis je calcule quelles règles de doctrine s'appliquent à cette demande. Je vérifie aussi que la vidéo de référence est toujours dans le dossier de session. (11 October 2026, 16:30:19 +0200)
+
+## 11 October 2026, 16:30:20 +0200 : Prompt
+
+<!-- feedback-event:71feac7e42c7a4573ac26bc96dd7a61f47003b9801f1f29a35aac662f7fdd6cd (11 October 2026, 16:30:20 +0200) -->
+- Project: zenray-motion-design-01; kind: prompt. (11 October 2026, 16:30:20 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 16:30:20 +0200)
+
+> Base directory for this skill: /Users/zenray/.claude/skills/zenray-motion-design (11 October 2026, 16:30:20 +0200)
+>
+> # ZenRay Motion Design : méthode HyperFrames (10 October 2026) (11 October 2026, 16:30:20 +0200)
+>
+> Méthode validée sur la référence OneKey Pro 2 (68,05 s, 27 plans), projet zenray-motion-design-01. Chaque ligne porte sa date (10 October 2026). Ce skill ne contient ni cadre, ni texte, ni image de la référence. (11 October 2026, 16:30:20 +0200)
+>
+> ## Entrées et atelier (10 October 2026) (11 October 2026, 16:30:20 +0200)
+>
+> - Démarrer par zenray-assets (BeginProject puis BeginConversation avec le vrai identifiant de session), puis le feedback canonique. (10 October 2026) (11 October 2026, 16:30:20 +0200)
+> - Atelier : `~/.claude/tmp/tmp-<id>/`. Mémoire : `~/.claude/Memory1/Projects/<id>/`. (10 October 2026) (11 October 2026, 16:30:20 +0200)
+> - Référence : téléchargée seulement avec permission explicite, dans un dossier neuf du scratchpad, jamais dans l'atelier ni la mémoire. (10 October 2026) (11 October 2026, 16:30:20 +0200)
+> - Python des analyses : `~/.venvs/motion-design/bin/python -I` (Pillow 11.3.0). Le mode `-I` ignore le site utilisateur, où Pillow n'est pas. (10 October 2026) (11 October 2026, 16:30:20 +0200)
+>
+> ## Étape 1 : mesurer la référence (10 October 2026) (11 October 2026, 16:30:20 +0200)
+>
+> - `ffprobe` pour la durée, la cadence et les flux. (10 October 2026) (11 October 2026, 16:30:20 +0200)
+> - Coupes : `ffmpeg -vf scdet=threshold=6`, puis le journal lu par `AnalyzeReference.py`. Une coupe franche a un score d'au moins 15. (10 October 2026) (11 October 2026, 16:30:20 +0200)
+> - Courbes de mouvement et de luminance à 60 images/s : `AnalyzeReference.py <mp4> <dossier> --fps 60 --scdet-log <log>`. (10 October 2026) (11 October 2026, 16:30:20 +0200)
+> - Frames à 10 images/s, 1280×720, dans `f%04d.jpg` : base de l'OCR et des mesures. (10 October 2026) (11 October 2026, 16:30:20 +0200)
+> - Légendes : `ExtractCaptions.py <frames> --fps 10 --out captions.json` (tesseract `--psm 11`, lignes vues dans une fenêtre de 0,25 s fusionnées). (10 October 2026) (11 October 2026, 16:30:20 +0200)
+> - ADN : `MeasureDna.py` donne palette, accents, boîte d'encre des légendes et mouvement par plan. (10 October 2026) (11 October 2026, 16:30:20 +0200)
+> - Lecture visuelle : planches de 24 vignettes avec ImageMagick `montage`, en précisant `-font` (sinon l'étiquette est vide). (10 October 2026) (11 October 2026, 16:30:20 +0200)
+>
+> ## Étape 2 : storyboard et paramètres HDA (10 October 2026) (11 October 2026, 16:30:20 +0200)
+>
+> - `params/tokens.json` : couleurs, typographie, mise en page, dispositif, effets, mouvement. Une valeur de marque n'existe qu'à un endroit. (10 October 2026) (11 October 2026, 16:30:20 +0200)
+> - `params/timeline.json` : plans en temps absolu, sans trou, qui finissent à la durée de la vidéo ; légendes avec texte, placement, taille, remplissage et apparition. (10 October 2026) (11 October 2026, 16:30:20 +0200)
+> - `params/choreography.json` : enregistrements `[cible, décalage, durée, ease, from, to]` par plan, avec les opérations `$set`, `$draw`, `$ring`, `$count`, `$along`, `$qr`. Une valeur `@groupe.clé` renvoie au jeton. (10 October 2026) (11 October 2026, 16:30:20 +0200)
+> - `params/ambient.json` : une dérive continue par plan, dont l'amplitude se calibre sur l'énergie mesurée de la référence. (10 October 2026) (11 October 2026, 16:30:20 +0200)
+> - Règle des huit : au plus huit paramètres par catégorie d'interface (curseurs). Les jetons ne sont pas des curseurs. (10 October 2026) (11 October 2026, 16:30:20 +0200)
+> - `BuildStoryboard.py --params ... --analysis ... --report ... --out storyboard/storyboard.html` génère le storyboard depuis ces fichiers, sans écriture à la main. (10 October 2026) (11 October 2026, 16:30:20 +0200)
+>
+> ## Étape 3 : gabarit et cuisson (10 October 2026) (11 October 2026, 16:30:20 +0200)
+>
+> - `template/index.html` : structure, classes, identifiants. Aucune couleur ni taille en dur : `var(--zr-...)` et `{{groupe.clé}}` pour les nombres. (10 October 2026) (11 October 2026, 16:30:20 +0200)
+> - `node Scripts/Cook.mjs` écrit `composition/index.html`, `styles.css`, `tokens.css`, `timeline-data.js`, `motion-core.js`, `motion-main.js`. (10 October 2026) (11 October 2026, 16:30:20 +0200)
+> - Exception documentée : la géométrie des chemins SVG et les rayons ou ombres fins restent dans le gabarit, car ce sont des dessins et non des valeurs de marque. (10 October 2026) (11 October 2026, 16:30:20 +0200)
+> - Polices : `assets/fonts/` avec `@font-face` relatif à `styles.css`. Aucune police système implicite. (10 October 2026) (11 October 2026, 16:30:20 +0200)
+> - Copier GSAP en local (`vendor/gsap.min.js`, 3.14.2) pour un rendu déterministe. (10 October 2026) (11 October 2026, 16:30:20 +0200)
+>
+> ## Étape 4 : contrôle rapide (10 October 2026) (11 October 2026, 16:30:20 +0200)
+>
+> - `HYPERFRAMES_SKIP_SKILLS=1 npx hyperframes lint composition --json` : zéro erreur attendu. Les 26 avertissements `nested_structure_needs_subcomposition` sont acceptés (timeline racine unique, voir pièges). (10 October 2026) (11 October 2026, 16:30:20 +0200)
+> - `npx hyperframes check` : exécution, mise en page, mouvement, contraste AA. (10 October 2026) (11 October 2026, 16:30:20 +0200)
+> - `npx hyperframes snapshot --at t1,t2,... --no-end --against ref.mp4 -o dossier` : 27 instants en environ 20 s, avec paires et planches. (10 October 2026) (11 October 2026, 16:30:20 +0200)
+> - `render` ne connaît pas `--at` : la capture ponctuelle passe par `snapshot`. (10 October 2026) (11 October 2026, 16:30:20 +0200)
+>
+> ## Étape 5 : rendu (10 October 2026) (11 October 2026, 16:30:20 +0200)
+>
+> - `HYPERFRAMES_BROWSER_PATH="$(npx hyperframes browser path)" npx hyperframes render -f 60 -q looks -w 8 -o renders/<nom>.mp4` : 68 s rendues en environ 70 s sur M5 Max, 11 à 13 Mo. (10 October 2026) (11 October 2026, 16:30:20 +0200)
+> - Le navigateur est le shell headless géré par HyperFrames, jamais le Chrome personnel de Matthieu. (10 October 2026) (11 October 2026, 16:30:20 +0200)
+> - `HYPERFRAMES_SKIP_SKILLS=1` évite d'installer des skills tiers depuis GitHub. (10 October 2026) (11 October 2026, 16:30:20 +0200)
+>
+> ## Étape 6 : contrat de vérification (10 October 2026) (11 October 2026, 16:30:20 +0200)
+>
+> - `python3 -I Scripts/Verify.py <rendu> --reference-dir <analyse> --reference-frames <frames 10 fps> --timeline params/timeline.json --work <dossier> --out verify/report.json`. (10 October 2026) (11 October 2026, 16:30:20 +0200)
+> - Seuils, écrits en tête de `Verify.py` : durée à 0,10 s près ; corrélation image à image au moins 0,45 ; corrélation de rang par plan au moins 0,50 ; 60 % des coupes franches retrouvées à 0,10 s près ; 70 % des légendes lisibles à l'OCR ; écart médian de timing au plus 0,25 s ; ΔE CIE76 médian au plus 25 ; rapport d'encre entre 0,85 et 1,15. (10 October 2026) (11 October 2026, 16:30:20 +0200)
+> - Itérer (boucle dont-stop) jusqu'à `OVERALL PASS`, en modifiant les paramètres et jamais le contrat pour faire passer un rendu. (10 October 2026) (11 October 2026, 16:30:20 +0200)
+>
+> ## Pièges mesurés (10 October 2026) (11 October 2026, 16:30:20 +0200)
+>
+> - Sous-compositions, un fichier par plan : essai abandonné. Les plans ne se trouvaient pas au temps local attendu (orbe noir à 0,9 s, compteur figé). Timeline racine unique à la place. Cause précise non isolée. (10 October 2026) (11 October 2026, 16:30:20 +0200)
+> - `filter` sur un élément `preserve-3d` aplatit la 3D : la carte affichait son recto en miroir. Poser le filtre sur un parent sans `preserve-3d`. (10 October 2026) (11 October 2026, 16:30:20 +0200)
+> - Raccourci `background` : il remet `background-clip` à `border-box`. Déclarer `-webkit-background-clip: text` et `background-clip: text` après. (10 October 2026) (11 October 2026, 16:30:20 +0200)
+> - Classe réutilisée : `.bronze` (plaque du plan 8) a donné un fond plein cadre au titre du plan 26. Modificateurs uniques. (10 October 2026) (11 October 2026, 16:30:20 +0200)
+> - Coupe franche : un plan qui apparaît par fondu depuis le noir ne coupe pas, car noir vers noir ne se mesure pas. Le plan apparaît entier et son entrée devient un mouvement. (10 October 2026) (11 October 2026, 16:30:20 +0200)
+> - Énergie : une dérive lente d'un dégradé flou donne un rapport de 0,03 à 0,2 face à la référence. Les bords nets et contrastés portent l'énergie. (10 October 2026) (11 October 2026, 16:30:20 +0200)
+> - Flash plein cadre : l'énergie du plan 12 valait trois fois la cible. Réduire l'opacité et les tranches. (10 October 2026) (11 October 2026, 16:30:20 +0200)
+> - Légendes : l'élément temporisé est la ligne elle-même (pas de div imbriqué), avec `max-width` pris d'un jeton, sinon `caption_text_overflow_risk`. (10 October 2026) (11 October 2026, 16:30:20 +0200)
+> - Assemblage QR : un décalage de 0,012 s par module dépasse la durée du plan, donc 0,002 s. (10 October 2026) (11 October 2026, 16:30:20 +0200)
+> - macOS n'a pas la commande `timeout` : ne pas s'en servir. (10 October 2026) (11 October 2026, 16:30:20 +0200)
+>
+> ## Mesures de la référence (10 October 2026) (11 October 2026, 16:30:20 +0200)
+>
+> - 68,053 s, 1920×1080, 60 images/s, H.264 yuv420p, 4080 images ; audio AAC 48 kHz stéréo non reproduit. (10 October 2026) (11 October 2026, 16:30:20 +0200)
+> - 39 coupes détectées dont 13 franches ; 27 plans après fusion des micro-coupes entre 50,20 et 51,73 s. (10 October 2026) (11 October 2026, 16:30:20 +0200)
+> - Titres de légende : encre de 88,5 px à 1080p, centre vertical 0,506 ; notes de bas de page vers 0,92. (10 October 2026) (11 October 2026, 16:30:20 +0200)
+> - Neutres : noir pur #000000, blanc #ffffff, gris #d8d8d8, note #b6b4b1. Accents mesurés : bronze #8b3b16, #a34028, #e0873f ; bleu #4d74bc, #0d298d, #3ea3da ; acier #516374. (10 October 2026) (11 October 2026, 16:30:20 +0200)
+>
+> ## Chronologie des vérifications (10 October 2026) (11 October 2026, 16:30:20 +0200)
+>
+> - v1 : mouvement en échec (0,378 et 0,362), coupes 6 sur 13. (10 October 2026) (11 October 2026, 16:30:20 +0200)
+> - v2 : coupes 8 sur 13 ; corrélation image à image 0,491 ; corrélation de rang 0,462 (en échec). (10 October 2026) (11 October 2026, 16:30:20 +0200)
+> - v3 : tous les contrôles réussis (0,502 et 0,561 ; 9 coupes sur 13 ; 25 légendes sur 30 lisibles ; timing médian 0,10 s ; ΔE médian 10,25 ; rapport d'encre 0,967). (10 October 2026) (11 October 2026, 16:30:20 +0200)
+>
+> ## Fichiers (10 October 2026) (11 October 2026, 16:30:20 +0200)
+>
+> - `scripts/` : Cook, AnalyzeReference, ExtractCaptions, MeasureDna, Verify, BuildStoryboard. (10 October 2026) (11 October 2026, 16:30:20 +0200)
+> - `templates/` : gabarit `index.html`, `motion-core.js`, `motion-main.js`. (10 October 2026) (11 October 2026, 16:30:20 +0200)
+> - `examples/onekey-motion-01/params/` : jetons, plans, chorégraphie et dérives de la version validée, sans le texte ni les images de la référence. (10 October 2026) (11 October 2026, 16:30:20 +0200)
+> - Mise en place d'un nouveau projet : copier `templates/` dans `template/`, `examples/.../params/` dans `params/`, `scripts/` dans `Scripts/`, puis cuire. (10 October 2026) (11 October 2026, 16:30:20 +0200)
+>
+> ## Corrections du 11 October 2026 : légendes originales, fenêtres tenues, contrôle visuel (11 October 2026, 16:30:20 +0200)
+>
+> - 11 October 2026 : les légendes ne reprennent jamais un mot de la référence ni le nom de l'outil de production. La passe 3 a remplacé toutes les légendes par un texte original, et les libellés d'interface (« Lint », « Render », « Export », « frames », « HTML », « LICENSE ») par des mots neutres. Vérifier : relire les légendes contre les fragments OCR de la référence, et chercher dans le storyboard tout libellé d'outil. (11 October 2026) (11 October 2026, 16:30:20 +0200)
+> - 11 October 2026 : une légende ne se lit que si son entrée et sa sortie tiennent dans sa fenêtre. `motion-core.js` borne la révélation à 30 % de la fenêtre et la sortie à 15 % ; `BuildStoryboard.py` (`reveal_text`) décrit exactement les mêmes durées. Sans cette borne, une légende de 0,6 s ne devenait jamais entièrement visible. (11 October 2026) (11 October 2026, 16:30:20 +0200)
+> - 11 October 2026 : l'OCR (tesseract, `--psm 11`) ne lit pas les légendes posées sur un dégradé, des couleurs vives ou un petit titre, alors qu'elles se lisent à l'œil. Une légende non lue se relit sur l'image de son instant, puis se consigne dans `params/visual-checks.json`. Ce fichier porte le nom du rendu : un contrôle fait sur une autre version ne compte jamais. (11 October 2026) (11 October 2026, 16:30:20 +0200)
+> - 11 October 2026 : une légende citée dans les notes se remet à jour à chaque changement de texte, sinon le storyboard décrit une vidéo qui n'existe plus. Un « n.d. » ne se laisse jamais tel quel : « non lue par l'OCR » ou « non mesuré » dit ce qui a été mesuré. (11 October 2026) (11 October 2026, 16:30:20 +0200)
+> - 11 October 2026 : téléphone à 375 px, aucun défilement horizontal de la page. Chaque table vit dans une boîte `overflow-x: auto`, les colonnes de grille sont en `minmax(0, …)`, et la marge latérale est de 16 px. Contrôle : `scrollWidth` égal à `clientWidth` dans le navigateur interne. (11 October 2026) (11 October 2026, 16:30:20 +0200)
+> - 11 October 2026 : le jeton `effects.captionShadow` ajoute une ombre douce aux légendes. Il n'a pas fait monter la lecture OCR mesurée (v4, v5) ; il est conservé pour la lisibilité à l'œil. (11 October 2026) (11 October 2026, 16:30:20 +0200)
+> - 11 October 2026 : chronologie de la passe. v3 : vérification OVERALL PASS, 25 légendes sur 30 lues par l'OCR, légendes qui décrivent l'outil. v4 : texte original, OVERALL PASS, 23 sur 30. v5 : fenêtres des révélations bornées, OVERALL PASS, 23 sur 30. v6 : libellés neutres, OVERALL PASS, 23 sur 30, sept légendes non lues relues à l'œil. (11 October 2026) (11 October 2026, 16:30:20 +0200)
+>
+> ## Son sans musique : couche faite en code, vérifiée à l'arrivée (11 October 2026) (11 October 2026, 16:30:20 +0200)
+>
+> - 11 October 2026 : aucune musique ni son de la référence dans un livrable. La couche sonore est faite en code (`Scripts/MakeSound.py`, paramètres dans `params/sound.json`) : un coup grave à chaque coupe franche (score de la référence d'au moins 15), un souffle filtré à chaque coupe douce, un clic à chaque instant d'apparition de légende. Une musique fournie par Matthieu se cale sur les mêmes coupes. (11 October 2026) (11 October 2026, 16:30:20 +0200)
+> - 11 October 2026 : l'image n'est pas réencodée. La vidéo muette reçoit la piste AAC par copie du flux vidéo (`-c:v copy`), et `VerifySound.py` prouve que les images sont identiques (hachage image par image). (11 October 2026) (11 October 2026, 16:30:20 +0200)
+> - 11 October 2026 : vérification : décodage de la piste, premier instant où le niveau atteint 15 % de l'écart entre le niveau juste avant l'événement et le niveau maximal qui suit. Tolérance : une image (16,7 ms à 60 images/s). Témoin : une piste décalée de 100 ms doit échouer, et elle échoue (106 ms). (11 October 2026) (11 October 2026, 16:30:20 +0200)
+> - 11 October 2026 : piège payé : une première mesure cherchait le premier niveau au-delà d'un seuil absolu. Une queue de son voisin, à moins de 0,12 s, était alors prise pour le départ et donnait des écarts de -50 ms sans défaut réel. La mesure compare désormais chaque départ au niveau juste avant. (11 October 2026) (11 October 2026, 16:30:20 +0200)
+> - 11 October 2026 : résultat mesuré sur la v6 avec son : 53 événements sur 53 audibles, écart maximal de 8,0 ms, crête 0,767 du plein niveau, niveau intégré -21,7 LUFS, plage de dynamique 12,9 LU. (11 October 2026) (11 October 2026, 16:30:20 +0200)
+>
+>
+> ARGUMENTS: Passe 2 : animatique fidèle à la référence OneKey Pro 2 (storyboard plan par plan, analyse des animations, intégration 3D, liste des assets avec emplacements nommés dans le montage HyperFrames, assets faits en code produits, prompts Google Flow préparés, génération seulement après validation). Indexer la méthode dans zenray-edit. (11 October 2026, 16:30:20 +0200)
+
+## 11 October 2026, 16:35:47 +0200 : Iteration
+
+<!-- feedback-event:56d5c09515c9a2b85fbe0647a12ef7e5d7bec64336d66c99109c21656cbe2c62 (11 October 2026, 16:35:47 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (11 October 2026, 16:35:47 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 16:35:47 +0200)
+
+> Les deux outils de mesure sont écrits. Je les lance en parallèle sur la référence et je prépare deux planches de 36 vignettes, une par seconde, pour décrire ce qu'on voit à chaque instant. (11 October 2026, 16:35:47 +0200)
+
+## 11 October 2026, 16:57:38 +0200 : Iteration
+
+<!-- feedback-event:9d094449c6281ba2d3943583ef47793e01d789671d331616d6b7823205d3f451 (11 October 2026, 16:57:38 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (11 October 2026, 16:57:38 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 16:57:38 +0200)
+
+> Point d'étape : je corrige la lisibilité des étiquettes et les fonds faits en code qui masquaient trois emplacements, puis je lance le rendu. (11 October 2026, 16:57:38 +0200)
