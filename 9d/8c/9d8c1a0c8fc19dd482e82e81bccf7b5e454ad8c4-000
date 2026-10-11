@@ -2319,3 +2319,105 @@
 - Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 16:57:38 +0200)
 
 > Point d'étape : je corrige la lisibilité des étiquettes et les fonds faits en code qui masquaient trois emplacements, puis je lance le rendu. (11 October 2026, 16:57:38 +0200)
+
+## 11 October 2026, 16:58:25 +0200 : Prompt
+
+<!-- feedback-event:f50924714e568cbc5dd513390c7820c03141b9c4c2eb74b7a9d065e77009d0a7 (11 October 2026, 16:58:25 +0200) -->
+- Project: zenray-motion-design-01; kind: prompt. (11 October 2026, 16:58:25 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 16:58:25 +0200)
+
+> [Image: original 2880x1080, displayed at 2000x750. Multiply coordinates by 1.44 to map to original image.] (11 October 2026, 16:58:25 +0200)
+
+## 11 October 2026, 17:03:35 +0200 : Iteration
+
+<!-- feedback-event:75fce4bf40437a077626af523ecaa741598288c2bef4efb766c43fbc6da7f57c (11 October 2026, 17:03:35 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (11 October 2026, 17:03:35 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 17:03:35 +0200)
+
+> Point d'étape : j'applique le script couleur aux emplacements et la correction des impulsions sonores, puis je refais le rendu et les deux vérifications. (11 October 2026, 17:03:35 +0200)
+
+## 11 October 2026, 17:15:12 +0200 : Iteration
+
+<!-- feedback-event:e5aafe2169ff29b062aca11c0112e2862142f64d317a340ff704423a44519d5e (11 October 2026, 17:15:12 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (11 October 2026, 17:15:12 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 17:15:12 +0200)
+
+> Point d'étape : j'inscris la méthode de l'animatique dans le skill de motion design et je l'indexe dans zenray-edit. Il restera ensuite la mémoire du projet et l'envoi. (11 October 2026, 17:15:12 +0200)
+
+## 11 October 2026, 17:16:48 +0200 : Standing rule
+
+<!-- feedback-event:ae64928f172758fef7d1c93d0866d7b17232632c2068e8d3b9f28cf3968a0f4c (11 October 2026, 17:16:48 +0200) -->
+- Project: zenray-motion-design-01; kind: rule. (11 October 2026, 17:16:48 +0200)
+
+> 11 October 2026 : génération d'assets uniquement après la validation de Matthieu ; les prompts décrivent l'appareil original de la fiche A00, jamais le produit, la marque ou le texte de la référence. (11 October 2026, 17:16:48 +0200)
+
+## 11 October 2026, 17:16:48 +0200 : Log
+
+<!-- feedback-event:97de5d7150d70e0e63dc2a3105c671be268b688109dd5149137ecbe7cff4720c (11 October 2026, 17:16:48 +0200) -->
+- Project: zenray-motion-design-01; kind: log. (11 October 2026, 17:16:48 +0200)
+
+> 11 October 2026 : passe 2 livrée. Animatique v8 en OVERALL PASS (9 coupes sur 13, mouvement 0,468), son v2 vérifié (55 sur 55, écart maximal 10 ms, -18,5 LUFS), 42 assets dont 25 emplacements nommés et 15 faits en code, fiche storyboard/animatique.html. En attente : accès à la génération et validation de A00. (11 October 2026, 17:16:48 +0200)
+
+## 11 October 2026, 17:16:59 +0200 : Iteration
+
+<!-- feedback-event:6cb3e86c6c6ea047b331616340f2aac4ac36a6ee76efdbbffaa8ceee1517ab35 (11 October 2026, 17:16:59 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (11 October 2026, 17:16:59 +0200)
+- Source: checkpoint:claude:e067e0eb-400b-4769-9366-225560e7a0e4. (11 October 2026, 17:16:59 +0200)
+
+> Passe 2 livrée : animatique v8 en OVERALL PASS (9 coupes sur 13, mouvement 0,468), son v2 vérifié (55 sur 55, écart maximal 10 ms, -18,5 LUFS), 42 assets dont 25 emplacements nommés et 15 faits en code, fiche storyboard/animatique.html, méthode indexée dans zenray-motion-design et zenray-edit. Prochain geste : Matthieu choisit l'accès à la génération et valide la fiche A00. (11 October 2026, 17:16:59 +0200)
+
+## 11 October 2026, 17:17:08 +0200 : Iteration
+
+<!-- feedback-event:c94686b1434940518ee9504b8598989e4c2e57ee1973256332e0e389c5032514 (11 October 2026, 17:17:08 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (11 October 2026, 17:17:08 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 17:17:08 +0200)
+
+> Point d'étape : tout est consigné (commit `5bdfe850b`). J'envoie la fiche de l'animatique, le film avec son et l'inventaire des assets. (11 October 2026, 17:17:08 +0200)
+
+## 11 October 2026, 17:18:24 +0200 : Iteration
+
+<!-- feedback-event:424a5ba015693ecf9210574179e9da53c1faa6bafaf0f7275e9ecc53d6450702 (11 October 2026, 17:18:24 +0200) -->
+- Project: zenray-motion-design-01; kind: iteration. (11 October 2026, 17:18:24 +0200)
+- Source: /Users/zenray/.claude/projects/-Users-zenray--claude-Memory1/e067e0eb-400b-4769-9366-225560e7a0e4.jsonl. (11 October 2026, 17:18:24 +0200)
+
+> J'ai refait le montage en animatique : un montage qui reprend la structure de la référence plan par plan, où chaque asset manquant est un emplacement nommé et animé à sa place. La génération n'est pas lancée, faute d'accès et de ta validation. L'image et le son passent leurs vérifications. (11 October 2026, 17:18:24 +0200)
+>
+> **Ce qui est fait** (11 October 2026, 17:18:24 +0200)
+>
+> - **Lecture de la référence**, seconde par seconde et plan par plan : ce qu'on voit, ce que le plan illustre, comment l'animation est faite, et si la 3D est nécessaire. (11 October 2026, 17:18:24 +0200)
+> - **Le « flow » qui manquait, mesuré.** Les plans démarrent gros ou décalés, puis se posent en décélérant. Les 18 plans qui bougent rejouent leur mouvement de caméra mesuré. (11 October 2026, 17:18:24 +0200)
+> - **42 assets recensés.** 25 sont des emplacements à produire, chacun étiqueté dans le film avec son identifiant, sa source, son format et sa durée. 15 sont faits en code : titres, légendes, écrans d'interface, logo, effets sonores et musique provisoire. (11 October 2026, 17:18:24 +0200)
+> - **Son en code**, sans rien de la référence : 130 effets calés sur les événements du film, et une musique provisoire sur le tempo mesuré (87,9 BPM, croches à 175,85). (11 October 2026, 17:18:24 +0200)
+> - **Méthode indexée** dans zenray-motion-design (section « Passe 2 ») et dans zenray-edit. (11 October 2026, 17:18:24 +0200)
+>
+> **Identification.** La police est une grotesque proche de SF Pro Display ou d'Inter Display, estimée à l'œil. La musique n'est créditée nulle part : elle ne s'identifie pas et je ne la reprends pas. Aucune voix off n'est établie. (11 October 2026, 17:18:24 +0200)
+>
+> **Ce qu'il me faut pour Google Flow.** Flow n'a ni API ni connecteur, mais ses modèles passent par l'API Gemini. Deux voies possibles : (11 October 2026, 17:18:24 +0200)
+>
+> - **Clé API (je la conseille)** : une clé créée dans Google AI Studio, avec la facturation activée, que tu ranges toi-même dans le trousseau macOS, sans la coller ici : (11 October 2026, 17:18:24 +0200)
+> ```bash (11 October 2026, 17:18:24 +0200)
+> security add-generic-password -a "$USER" -s gemini-api-key -w (11 October 2026, 17:18:24 +0200)
+> ``` (11 October 2026, 17:18:24 +0200)
+> - **Connexion à Flow** : tu te connectes toi-même à Flow dans le navigateur intégré. (11 October 2026, 17:18:24 +0200)
+>
+> Les 16 vidéos coûteraient environ 15 $ en Veo Fast et 51 $ en Standard, et la musique finale 0,08 $ avec Lyria. (11 October 2026, 17:18:24 +0200)
+>
+> **Ce que tu dois valider avant toute génération :** d'abord le prompt de la fiche de design A00, qui fixe le même appareil pour tous les plans, puis les autres prompts. Tous décrivent un appareil original, jamais celui de la référence. (11 October 2026, 17:18:24 +0200)
+>
+> **Choix que j'ai faits :** légendes réécrites selon le rôle de chaque plan, une teinte par plan tirée des couleurs mesurées pour que les coupes se lisent, et musique provisoire en attendant la finale (M01). Les écrans U02 et U09 restent à faire en code. (11 October 2026, 17:18:24 +0200)
+>
+> Fichiers : [fiche de l'animatique](/Users/zenray/.claude/tmp/tmp-zenray-motion-design-01/storyboard/animatique.html), [film 1080p](/Users/zenray/.claude/tmp/tmp-zenray-motion-design-01/renders/zenray-motion-design-01-animatique-v1.mp4), [aperçu 720p](/Users/zenray/.claude/tmp/tmp-zenray-motion-design-01/renders/zenray-motion-design-01-animatique-v1-apercu-720p.mp4), [inventaire des assets](/Users/zenray/.claude/tmp/tmp-zenray-motion-design-01/storyboard/assets.csv). Le film 1080p fait 46 Mio, au-delà de la limite de 30 Mio du téléphone et du web : il n'est visible que dans l'application de bureau, d'où l'aperçu de 5,8 Mio. (11 October 2026, 17:18:24 +0200)
+>
+> | Ce que tu voulais | Fait ? | Comment je le sais | (11 October 2026, 17:18:24 +0200)
+> |---|---|---| (11 October 2026, 17:18:24 +0200)
+> | Storyboard de ce qu'on voit et de ce que chaque plan illustre | Oui | 68 secondes et 27 plans dans la fiche ; 95 vignettes chargées, page lisible à 375 px | (11 October 2026, 17:18:24 +0200)
+> | Animations reproduites | Oui | Vérification de l'image réussie : mouvement 0,468, 9 coupes franches sur 13 | (11 October 2026, 17:18:24 +0200)
+> | Assets nommés dans le montage | Oui | 25 emplacements étiquetés, vus sur les captures | (11 October 2026, 17:18:24 +0200)
+> | Assets faits sans génération | Oui, sauf U02 et U09 | 15 faits ; son : 55 départs sur 55, écart maximal 10 ms | (11 October 2026, 17:18:24 +0200)
+> | Fontes, sons et musique identifiés | En partie | Police estimée, tempo et sons mesurés ; musique non créditée | (11 October 2026, 17:18:24 +0200)
+> | Accès à Google Flow | En attente | Il me faut ta clé API ou ta connexion | (11 October 2026, 17:18:24 +0200)
+> | Génération après ta validation | Rien de lancé | Aucun appel de génération envoyé | (11 October 2026, 17:18:24 +0200)
+>
+> Ta demande en plus court : « Reproduis le flow de la référence plan par plan, monte chaque asset manquant comme un emplacement nommé, fais en code ce que tu peux, prépare les prompts du reste et dis-moi ce qu'il te faut pour Flow. » Deux termes : une *animatique* est un montage provisoire dont chaque élément manquant est remplacé par un emplacement, et un *script couleur* donne une teinte à chaque plan pour lire le rythme du film. (11 October 2026, 17:18:24 +0200)
+>
+> Sources : [tarifs de l'API Gemini](https://ai.google.dev/gemini-api/docs/pricing), [génération vidéo dans l'API Gemini](https://ai.google.dev/gemini-api/docs/video), [Veo 3 dans l'API Gemini](https://geekflare.com/news/you-can-now-use-veo-3-in-the-gemini-api), [Veo 3.1 dans Flow et Vertex](https://www.etcentric.org/tag/veo-3-1-fast), [guide Veo](https://www.pixelbin.io/blog/how-to-use-google-veo-ai-video-generator). (11 October 2026, 17:18:24 +0200)
