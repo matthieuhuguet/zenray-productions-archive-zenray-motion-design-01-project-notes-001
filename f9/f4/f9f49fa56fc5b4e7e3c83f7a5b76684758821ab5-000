@@ -1,7 +1,7 @@
 {
  "schemaVersion": 1,
  "projectId": "zenray-motion-design-01",
- "scannedAt": "2026-10-11T21:19:47.430Z",
+ "scannedAt": "2026-10-11T21:26:47.635Z",
  "conversations": [
   {
    "projectId": "zenray-motion-design-01",
@@ -31,7 +31,7 @@
    "provider": "claude",
    "sessionId": "3a9c2407-7dcc-4acd-baf2-90a94300e953",
    "title": "ZENRAY HEIGHT",
-   "updatedAt": "2026-10-11T21:19:33.069Z",
+   "updatedAt": "2026-10-11T21:26:03.082Z",
    "bytes": 20598,
    "boundProject": "zenray-height"
   },
@@ -47,8 +47,8 @@
    "provider": "claude",
    "sessionId": "97dafd1e-ddee-454d-997b-6216fe6d4064",
    "title": "ZENRAY HEIGHT (fork)",
-   "updatedAt": "2026-10-11T21:19:38.121Z",
-   "bytes": 22640400,
+   "updatedAt": "2026-10-11T21:26:11.167Z",
+   "bytes": 20635,
    "boundProject": "zenray-height"
   },
   {
