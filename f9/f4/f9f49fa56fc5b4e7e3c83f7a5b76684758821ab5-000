@@ -1,7 +1,7 @@
 {
  "schemaVersion": 1,
  "projectId": "zenray-motion-design-01",
- "scannedAt": "2026-10-12T09:03:16.996Z",
+ "scannedAt": "2026-10-12T10:47:10.087Z",
  "conversations": [
   {
    "projectId": "zenray-motion-design-01",
@@ -30,9 +30,9 @@
    "conversationId": "claude:7e78b89b-c9f6-435b-aeea-a9878d6c808b",
    "provider": "claude",
    "sessionId": "7e78b89b-c9f6-435b-aeea-a9878d6c808b",
-   "title": "Motion Design V2",
-   "updatedAt": "2026-10-12T09:02:59.771Z",
-   "bytes": 11375163,
+   "title": "Motion Design GLSL",
+   "updatedAt": "2026-10-12T10:45:55.620Z",
+   "bytes": 20963,
    "boundProject": "zenray-motion-design"
   },
   {
@@ -81,6 +81,22 @@
    "title": "ZENRAY ASSETS",
    "updatedAt": "2026-10-11T22:51:54.267Z",
    "bytes": 20888,
+   "boundProject": null
+  },
+  {
+   "projectId": "zenray-motion-design-01",
+   "lines": 2,
+   "work": 0,
+   "prompts": 0,
+   "first": "2026-10-12T10:05:05.102Z",
+   "last": "2026-10-12T10:10:26.635Z",
+   "strength": "weak",
+   "conversationId": "claude:d71651de-2d57-45d0-b20d-830dd146d2ac",
+   "provider": "claude",
+   "sessionId": "d71651de-2d57-45d0-b20d-830dd146d2ac",
+   "title": "ZenRay Assets UI rework",
+   "updatedAt": "2026-10-12T10:15:09.570Z",
+   "bytes": 20896,
    "boundProject": null
   },
   {
